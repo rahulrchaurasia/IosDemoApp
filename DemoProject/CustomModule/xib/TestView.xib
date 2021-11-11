@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestVew" customModule="Food_Corner" customModuleProvider="target">
+            <connections>
+                <outlet property="ImgBack" destination="Gqs-Bf-0pj" id="bCO-1d-dzC"/>
+                <outlet property="containerMenu" destination="iN0-l3-epB" id="FdT-md-bb1"/>
+                <outlet property="lblLabel" destination="BJP-l6-oKt" id="kbu-Tf-yMO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="604" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Gqs-Bf-0pj">
+                    <rect key="frame" x="12" y="0.0" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="TeA-j7-p66"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJP-l6-oKt">
+                    <rect key="frame" x="10" y="10" width="584" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.43921568630000002" green="0.20392156859999999" blue="0.85098039219999999" alpha="0.71999999999999997" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="Gqs-Bf-0pj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="12" id="8xq-kI-0mb"/>
+                <constraint firstItem="BJP-l6-oKt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="BWp-gM-uRj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="BJP-l6-oKt" secondAttribute="trailing" constant="10" id="JH7-WA-eJv"/>
+                <constraint firstItem="Gqs-Bf-0pj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RXi-Jo-P5n"/>
+                <constraint firstAttribute="bottom" secondItem="BJP-l6-oKt" secondAttribute="bottom" constant="10" id="XTg-2X-Ujy"/>
+                <constraint firstItem="BJP-l6-oKt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ZKF-IV-5Oa"/>
+                <constraint firstAttribute="bottom" secondItem="Gqs-Bf-0pj" secondAttribute="bottom" id="gnP-O9-dVy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="24.637681159420293" y="13.392857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="left_arrow" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--CustomVC-->
+        <scene sceneID="Frp-XQ-ELq">
+            <objects>
+                <viewController storyboardIdentifier="CustomVC" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="cRH-rL-thC" customClass="CustomVC" customModule="Food_Corner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vwi-pw-hHK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YnK-lT-W0W" customClass="TestVew" customModule="Food_Corner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lzh-Tc-xM8"/>
+                                </constraints>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Fii-tW-Iie"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YnK-lT-W0W" firstAttribute="leading" secondItem="Fii-tW-Iie" secondAttribute="leading" id="VyU-bO-Cb1"/>
+                            <constraint firstItem="YnK-lT-W0W" firstAttribute="trailing" secondItem="Fii-tW-Iie" secondAttribute="trailing" id="en5-wp-DCI"/>
+                            <constraint firstItem="YnK-lT-W0W" firstAttribute="top" secondItem="Fii-tW-Iie" secondAttribute="top" id="s1E-eH-oDN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9Bb-iR-qm8"/>
+                    <connections>
+                        <outlet property="testView" destination="YnK-lT-W0W" id="EPg-b1-h0j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Nc-jc-jpr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1039.1304347826087" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+</document>
