@@ -32,6 +32,8 @@ let customBlackTransparent =  UIColor(cgColor: #colorLiteral(red: 0, green: 0, b
 let customPrimaryColor =  UIColor(cgColor: #colorLiteral(red: 0.6908986568, green: 0.3392218351, blue: 0.9942491651, alpha: 0.8238832439))
 
 
+
+
 /********   key   ******/
 
 struct getMessage {

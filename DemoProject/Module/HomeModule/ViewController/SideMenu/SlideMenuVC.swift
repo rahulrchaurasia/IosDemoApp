@@ -107,7 +107,28 @@ class SlideMenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
                 
             navigationController?.pushViewController(objVC, animated: true)
             
+        case 3 :
+            
+            let objVC =  WebViewVC.shareInstance()
                 
+            navigationController?.pushViewController(objVC, animated: true)
+            
+            
+        case 4 :
+            
+            let objVC =  TableViewDemoVC.shareInstance()
+                
+            navigationController?.pushViewController(objVC, animated: true)
+            
+        case 102 :
+            
+            let objVC =  CommonWebVC.shareInstance()
+   
+            navigationController?.pushViewController(objVC, animated: true)
+            
+      
+            
+            
         case 205 :
             
             showConfirmAlert (AlertTitle : "FoodCorner", AlertMessage: getMessage.logoutMessage)

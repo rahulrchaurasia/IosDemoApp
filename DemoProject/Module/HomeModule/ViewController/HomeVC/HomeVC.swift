@@ -113,6 +113,13 @@ class HomeVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let str = "iosscheme://http://horizon.policyboss.com:5000/tmp/fm_quoteshare/4732631_1_1711202184218.pdf"
+        //let array = str.components(separatedBy: "://")
+        let data = str.replacingOccurrences(of: "iosscheme://", with: "")
+        
+       
+        print(data)
+       
         setupSideMenu()
         
         NotificationCenter.default.addObserver(self, selector: #selector(NotifyData1(notification:)),

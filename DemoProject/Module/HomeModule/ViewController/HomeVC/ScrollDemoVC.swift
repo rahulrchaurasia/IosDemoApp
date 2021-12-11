@@ -1,14 +1,14 @@
 //
-//  DynamicLabelVC.swift
+//  ScrollDemoVC.swift
 //  DemoProject
 //
-//  Created by Daniyal Shaikh on 06/10/21.
+//  Created by Daniyal Shaikh on 10/12/21.
 //  Copyright © 2021 Nilesh Birhade. All rights reserved.
 //
 
 import UIKit
 
-class DynamicLabelVC: UIViewController {
+class ScrollDemoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,10 +29,10 @@ class DynamicLabelVC: UIViewController {
 
 }
 
-extension DynamicLabelVC {
+extension ScrollDemoVC {
     
-    static func shareInstance() -> DynamicLabelVC
+    static func shareInstance() -> ScrollDemoVC
     {
-        return DynamicLabelVC.initiateFromStoryboard(name: "HomeModule")
+        return ScrollDemoVC.initiateFromStoryboard(name: "HomeModule")
     }
 }

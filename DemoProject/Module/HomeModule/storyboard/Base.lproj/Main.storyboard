@@ -410,7 +410,9 @@
                             <constraint firstItem="DV2-gc-HJ1" firstAttribute="centerX" secondItem="Zsp-AZ-N8B" secondAttribute="centerX" id="y1a-xI-Mxt"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="uuK-fz-SpZ"/>
+                    <navigationItem key="navigationItem" id="uuK-fz-SpZ">
+                        <barButtonItem key="backBarButtonItem" title="    " id="mRy-rb-My7"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qrc-yJ-aBn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
