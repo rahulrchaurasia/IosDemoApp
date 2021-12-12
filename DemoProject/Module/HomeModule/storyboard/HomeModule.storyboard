@@ -373,14 +373,14 @@ Click Here</string>
             <objects>
                 <viewController storyboardIdentifier="ScrollDemoVC" id="8ga-dD-GbK" customClass="ScrollDemoVC" customModule="Food_Corner" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5lv-1p-SCh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nFC-ie-yUU">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GuQ-s3-aaP" userLabel="containerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="708.66666666666663"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="780.33333333333337"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thank_you" translatesAutoresizingMaskIntoConstraints="NO" id="uLk-kf-sfB">
                                                 <rect key="frame" x="157" y="20" width="100" height="100"/>
@@ -602,7 +602,7 @@ Click Here</string>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Fn-BR-66d" userLabel="UploadView">
                                                         <rect key="frame" x="0.0" y="281" width="382" height="40"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ims-bQ-I63">
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ims-bQ-I63" userLabel="OrderView">
                                                                 <rect key="frame" x="0.0" y="0.0" width="180" height="40"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Image Receipt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXj-kc-FOS">
@@ -670,24 +670,49 @@ Click Here</string>
                                                         </constraints>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knu-gT-by1">
-                                                        <rect key="frame" x="8" y="331" width="366" height="76.666666666666686"/>
+                                                        <rect key="frame" x="8" y="331" width="366" height="57.333333333333314"/>
                                                         <string key="text">Waiting For Approval
 you will receive an email 
-once your transaction is approved   .khkhkhkhk bjjjhjhkjhkhkhkhkhk bjbkjbkkknknk</string>
+once your transaction is approved.</string>
                                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuF-ko-7pc">
+                                                        <rect key="frame" x="179" y="398.33333333333337" width="24" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="ua4-Vd-inM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7v-qI-LiP">
+                                                        <rect key="frame" x="129" y="429.33333333333337" width="124" height="40"/>
+                                                        <color key="backgroundColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="9vb-pc-4kR"/>
+                                                            <constraint firstAttribute="height" constant="40" id="nqJ-kY-XJ6"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                        <color key="tintColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                                        <state key="normal" title="PAY ONLINE ">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstItem="oK0-jC-g4F" firstAttribute="centerX" secondItem="TWK-dS-Ehu" secondAttribute="centerX" id="2aF-Z3-7sp"/>
+                                                    <constraint firstItem="p7v-qI-LiP" firstAttribute="top" secondItem="FuF-ko-7pc" secondAttribute="bottom" constant="10" id="2kW-XU-4YS"/>
                                                     <constraint firstItem="UA4-9b-2PF" firstAttribute="leading" secondItem="ThJ-C3-Hog" secondAttribute="leading" id="2zW-cJ-S0l"/>
                                                     <constraint firstItem="ThJ-C3-Hog" firstAttribute="top" secondItem="2xF-Di-MfG" secondAttribute="bottom" constant="8" id="4X5-dN-bvk"/>
                                                     <constraint firstItem="2xF-Di-MfG" firstAttribute="top" secondItem="zLg-ui-o0G" secondAttribute="bottom" constant="2" id="62b-YN-HAP"/>
                                                     <constraint firstItem="k5t-hq-Ic2" firstAttribute="trailing" secondItem="ThJ-C3-Hog" secondAttribute="trailing" id="67c-bM-CHb"/>
                                                     <constraint firstAttribute="bottom" secondItem="inL-VZ-tkX" secondAttribute="bottom" constant="8" id="ABK-5m-XgJ"/>
                                                     <constraint firstItem="inL-VZ-tkX" firstAttribute="leading" secondItem="ThJ-C3-Hog" secondAttribute="leading" id="BHR-3N-qMC"/>
+                                                    <constraint firstItem="p7v-qI-LiP" firstAttribute="centerX" secondItem="TWK-dS-Ehu" secondAttribute="centerX" id="BOG-SL-huZ"/>
                                                     <constraint firstItem="k5t-hq-Ic2" firstAttribute="leading" secondItem="ThJ-C3-Hog" secondAttribute="leading" id="DTj-g2-yIG"/>
                                                     <constraint firstItem="UA4-9b-2PF" firstAttribute="trailing" secondItem="ThJ-C3-Hog" secondAttribute="trailing" id="Mrz-xn-5Em"/>
                                                     <constraint firstItem="UA4-9b-2PF" firstAttribute="top" secondItem="k5t-hq-Ic2" secondAttribute="bottom" constant="10" id="Nav-CG-Yaa"/>
@@ -712,13 +737,57 @@ once your transaction is approved   .khkhkhkhk bjjjhjhkjhkhkhkhkhk bjbkjbkkknknk
                                                     <constraint firstItem="zLg-ui-o0G" firstAttribute="top" secondItem="TWK-dS-Ehu" secondAttribute="top" id="tbK-8E-s0d"/>
                                                     <constraint firstItem="knu-gT-by1" firstAttribute="top" secondItem="7Fn-BR-66d" secondAttribute="bottom" constant="10" id="uEU-vP-25y"/>
                                                     <constraint firstItem="H3I-5v-Os8" firstAttribute="leading" secondItem="ThJ-C3-Hog" secondAttribute="leading" id="unY-rB-qTB"/>
+                                                    <constraint firstItem="FuF-ko-7pc" firstAttribute="top" secondItem="knu-gT-by1" secondAttribute="bottom" constant="10" id="xNP-O8-EgI"/>
+                                                    <constraint firstItem="FuF-ko-7pc" firstAttribute="centerX" secondItem="TWK-dS-Ehu" secondAttribute="centerX" id="zBh-KB-fzt"/>
                                                 </constraints>
                                             </view>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lvt-gp-GIN">
-                                                <rect key="frame" x="0.0" y="668.66666666666663" width="414" height="40"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lvt-gp-GIN">
+                                                <rect key="frame" x="0.0" y="730.33333333333337" width="414" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dkf-W1-xo7" userLabel="SucccessView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Place Successfully" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-SS-Xfx">
+                                                                <rect key="frame" x="12" y="16" width="187" height="18"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="18" id="Td0-7D-rCx"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="uOt-SS-Xfx" firstAttribute="leading" secondItem="dkf-W1-xo7" secondAttribute="leading" constant="12" id="Ha7-sk-gYu"/>
+                                                            <constraint firstAttribute="trailing" secondItem="uOt-SS-Xfx" secondAttribute="trailing" constant="8" id="awP-z5-Ouy"/>
+                                                            <constraint firstItem="uOt-SS-Xfx" firstAttribute="centerY" secondItem="dkf-W1-xo7" secondAttribute="centerY" id="wMU-Bx-1E2"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nt2-DB-Ob6" userLabel="MyOrder">
+                                                        <rect key="frame" x="207" y="0.0" width="207" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MY ORDERS" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kia-Fb-CjO">
+                                                                <rect key="frame" x="8" y="15.666666666666629" width="187" height="19"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="19" id="c8y-rb-NmW"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Kia-Fb-CjO" firstAttribute="centerY" secondItem="Nt2-DB-Ob6" secondAttribute="centerY" id="NjZ-9g-YyW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Kia-Fb-CjO" secondAttribute="trailing" constant="12" id="rXa-G4-UYl"/>
+                                                            <constraint firstItem="Kia-Fb-CjO" firstAttribute="leading" secondItem="Nt2-DB-Ob6" secondAttribute="leading" constant="8" id="wmS-Id-kAN"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
                                                 <color key="backgroundColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="0.75273026296379342" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="40" id="6xK-Wy-LH0"/>
+                                                    <constraint firstAttribute="height" constant="50" id="6xK-Wy-LH0"/>
                                                 </constraints>
                                             </stackView>
                                         </subviews>
@@ -735,7 +804,7 @@ once your transaction is approved   .khkhkhkhk bjjjhjhkjhkhkhkhkhk bjbkjbkkknknk
                                             <constraint firstItem="7Fn-BR-66d" firstAttribute="trailing" secondItem="JHd-D2-wZ9" secondAttribute="trailing" id="Y5h-1l-WcH"/>
                                             <constraint firstItem="Lvt-gp-GIN" firstAttribute="leading" secondItem="GuQ-s3-aaP" secondAttribute="leading" id="b0O-Ow-J1K"/>
                                             <constraint firstItem="JHd-D2-wZ9" firstAttribute="leading" secondItem="GuQ-s3-aaP" secondAttribute="leading" constant="16" id="bKi-Ln-egR"/>
-                                            <constraint firstItem="Lvt-gp-GIN" firstAttribute="top" secondItem="knu-gT-by1" secondAttribute="bottom" constant="20" id="bXY-Kf-6jU"/>
+                                            <constraint firstItem="Lvt-gp-GIN" firstAttribute="top" secondItem="p7v-qI-LiP" secondAttribute="bottom" constant="20" id="cb2-ds-vLz"/>
                                             <constraint firstItem="uLk-kf-sfB" firstAttribute="centerX" secondItem="GuQ-s3-aaP" secondAttribute="centerX" id="iVo-AW-NgW"/>
                                             <constraint firstAttribute="trailing" secondItem="JHd-D2-wZ9" secondAttribute="trailing" constant="16" id="iyx-1l-aFg"/>
                                             <constraint firstItem="fP7-xB-4O3" firstAttribute="leading" secondItem="JHd-D2-wZ9" secondAttribute="leading" id="kcm-2b-wXI"/>
@@ -768,7 +837,7 @@ once your transaction is approved   .khkhkhkhk bjjjhjhkjhkhkhkhkhk bjbkjbkkknknk
                             <constraint firstItem="nFC-ie-yUU" firstAttribute="leading" secondItem="xnn-9D-Pv0" secondAttribute="leading" id="p9F-ts-bQ0"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1000"/>
+                    <size key="freeformSize" width="414" height="800"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LZR-Oy-CNh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

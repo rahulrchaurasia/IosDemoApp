@@ -6,6 +6,7 @@
 //  Copyright © 2021 Nilesh Birhade. All rights reserved.
 //
 
+//https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/
 import UIKit
 
 class DynamicLabelVC: UIViewController {
@@ -21,29 +22,45 @@ class DynamicLabelVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
-        self.headerView1.addGestureRecognizer(gesture)
+        let gesture1 = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
+        
+        let gesture2 = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
+        
+        let gesture3 = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
+    
+        self.headerView1.addGestureRecognizer(gesture1)
+        self.headerView2.addGestureRecognizer(gesture2)
+        self.headerView3.addGestureRecognizer(gesture3)
         
     }
     
     
     @objc func clickAction(sender : UITapGestureRecognizer) {
         
-        let objVC = ScrollDemoVC.shareInstance()
-         
-        navigationController?.pushViewController(objVC, animated: true)
+      
+        switch sender.view {
+          case headerView1:
+              print("tapped Image View 1") //add your actions here
+            let objVC = ScrollDemoVC.shareInstance()
+             
+            navigationController?.pushViewController(objVC, animated: true)
+          case headerView2:
+              print("tapped Image View 2") //add your actions here
+              showAlert(message: "tapped Header View 2")
+          case headerView3:
+            showAlert(message: "tapped Header View 3")
+              print("tapped Image View 3") //add your actions here
+          default:
+              print("Tap not detected")
+          
+           
+          }
+        
+       
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+  
 
 }
 
