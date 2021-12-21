@@ -43,3 +43,10 @@ struct getMessage {
 
 
 
+struct storyBoardName  {
+    
+    static let  Main   = "Main"
+    static let  HomeModule = "HomeModule"
+    static let  BuisinessModule  = "BuisinessModule"
+    
+}

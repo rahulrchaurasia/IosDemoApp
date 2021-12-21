@@ -7,6 +7,9 @@
 //
 
 //https://agrawalsuneet.github.io/blogs/uiview-clicklistener-swift/
+
+
+// Scroollview : container height and width  equal to scrollview. but container height set to low priority ie 250
 import UIKit
 
 class DynamicLabelVC: UIViewController {
@@ -21,6 +24,8 @@ class DynamicLabelVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationItem.title = "Constrain Layout"
 
         let gesture1 = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
         
@@ -69,6 +74,6 @@ extension DynamicLabelVC {
     
     static func shareInstance() -> DynamicLabelVC
     {
-        return DynamicLabelVC.initiateFromStoryboard(name: "HomeModule")
+        return DynamicLabelVC.initiateFromStoryboard(name: storyBoardName.HomeModule)
     }
 }

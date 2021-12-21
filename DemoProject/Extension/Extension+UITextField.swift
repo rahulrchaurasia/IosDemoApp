@@ -28,6 +28,7 @@ func enablePasswordToggle(){
     self.rightView = button
     self.rightViewMode = .always
 }
+    
 @IBAction func togglePasswordView(_ sender: Any) {
     self.isSecureTextEntry = !self.isSecureTextEntry
     setPasswordToggleImage(sender as! UIButton)

@@ -109,25 +109,29 @@ class SlideMenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
             
         case 3 :
             
-            let objVC =  WebViewVC.shareInstance()
-                
-            navigationController?.pushViewController(objVC, animated: true)
+               
+            navigationController?.pushViewController( CommonWebVC.shareInstance(), animated: true)
             
             
         case 4 :
             
-            let objVC =  TableViewDemoVC.shareInstance()
-                
-            navigationController?.pushViewController(objVC, animated: true)
+              
+            navigationController?.pushViewController(WebViewVC.shareInstance(), animated: true)
             
+            
+        case 101 :
+            
+          
+            navigationController?.pushViewController(BaicTableDemoVC.shareInstance(), animated: true)
+            
+        
         case 102 :
             
-            let objVC =  CommonWebVC.shareInstance()
-   
-            navigationController?.pushViewController(objVC, animated: true)
+            navigationController?.pushViewController(ScrollViewDemoVC2.shareInstance(), animated: true)
             
-      
+        case 103 :
             
+            navigationController?.pushViewController(ScrollWithTableVC.shareInstance(), animated: true)
             
         case 205 :
             

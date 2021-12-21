@@ -1,15 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "product_icons.png",
+      "filename" : "cart_pixel.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "cart_pixel@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
+      "filename" : "cart_pixel@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

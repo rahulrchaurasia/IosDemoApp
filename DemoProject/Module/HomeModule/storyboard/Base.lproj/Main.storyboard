@@ -181,7 +181,9 @@
                             <constraint firstItem="eoD-Z6-tnp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mAZ-ZK-ZAC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ems-Ff-FCj"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ems-Ff-FCj">
+                        <barButtonItem key="backBarButtonItem" title="    " id="55N-Fk-NxI"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="brnEye" destination="VKi-0I-w6r" id="QMX-IY-eku"/>
                         <outlet property="txtUserID" destination="GX9-R6-Qd5" id="ldq-OB-PLQ"/>
@@ -202,7 +204,16 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z5A-MK-eGH">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.43921568630000002" green="0.20392156859999999" blue="0.85098039219999999" alpha="0.6942139571" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" name="Color"/>
+                            <color key="textShadowColor" red="0.0039215686269999999" green="0.40462641160000001" blue="0.47682915570000001" alpha="0.67789438479999997" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" name="Color"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="dSL-DK-HdV" kind="relationship" relationship="rootViewController" id="KKQ-WX-PIv"/>
@@ -232,7 +243,7 @@
             </objects>
             <point key="canvasLocation" x="2112" y="984"/>
         </scene>
-        <!--HomeVC-->
+        <!--Food Corner-->
         <scene sceneID="FVm-Gi-bb6">
             <objects>
                 <viewController storyboardIdentifier="HomeVC" id="dSL-DK-HdV" customClass="HomeVC" customModule="Food_Corner" customModuleProvider="target" sceneMemberID="viewController">
@@ -361,7 +372,8 @@
                             <constraint firstItem="fh5-K7-4Za" firstAttribute="leading" secondItem="Oeh-dy-YY7" secondAttribute="leading" id="rlY-WE-q4n"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="gJH-4N-6y4">
+                    <navigationItem key="navigationItem" title="Food Corner" id="gJH-4N-6y4">
+                        <barButtonItem key="backBarButtonItem" id="GWP-Va-qcT"/>
                         <barButtonItem key="leftBarButtonItem" image="menu-button-of-three-lines" id="o83-rU-xVe">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -378,7 +390,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sC9-GS-qvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="224.63768115942031" y="1739.7321428571429"/>
+            <point key="canvasLocation" x="343" y="1714"/>
         </scene>
         <!--HistoryVC-->
         <scene sceneID="s6w-uX-CXt">
@@ -389,10 +401,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DV2-gc-HJ1">
-                                <rect key="frame" x="159.5" y="433" width="95" height="30"/>
+                                <rect key="frame" x="191" y="433" width="32" height="30"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.20392156859999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="95" id="Pjf-ls-TER"/>
                                     <constraint firstAttribute="height" constant="30" id="wZ7-8p-20f"/>
                                 </constraints>
                                 <state key="normal" title="Next">
@@ -427,11 +438,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LyT-cg-BSM">
-                                <rect key="frame" x="159.5" y="433" width="95" height="30"/>
+                                <rect key="frame" x="191" y="433" width="32" height="30"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.20392156859999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="K8H-Ro-v10"/>
-                                    <constraint firstAttribute="width" constant="95" id="QaP-jB-IIS"/>
                                     <constraint firstAttribute="height" constant="30" id="ecQ-73-f6S"/>
                                 </constraints>
                                 <state key="normal" title="Next">
@@ -464,10 +474,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7L4-RJ-iHn">
-                                <rect key="frame" x="159.5" y="433" width="95" height="30"/>
+                                <rect key="frame" x="191" y="433" width="32" height="30"/>
                                 <color key="backgroundColor" red="0.43921568630000002" green="0.20392156859999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="95" id="GDj-Fg-0c6"/>
                                     <constraint firstAttribute="height" constant="30" id="OJV-ST-dAE"/>
                                 </constraints>
                                 <state key="normal" title="Next">
@@ -642,7 +651,9 @@
                             <constraint firstItem="byg-sQ-Yux" firstAttribute="trailing" secondItem="LOM-k5-EjK" secondAttribute="trailing" id="zvR-JR-V9y"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ApR-5Z-wfi"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ApR-5Z-wfi">
+                        <barButtonItem key="backBarButtonItem" title="     " id="M1t-tM-UfH"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="lblName" destination="BAe-m7-M4o" id="WWA-Et-CPL"/>
                         <outlet property="lblVersion" destination="fPd-sa-E9q" id="ENT-31-sjm"/>
@@ -666,7 +677,9 @@
             <objects>
                 <navigationController storyboardIdentifier="LeftMenuNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" navigationBarHidden="YES" id="aNK-a5-keO" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="ebd-ns-gqd"/>
+                    <navigationItem key="navigationItem" id="ebd-ns-gqd">
+                        <barButtonItem key="backBarButtonItem" title="   " id="lPn-Vv-D1X"/>
+                    </navigationItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hoR-NQ-FJr">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -795,7 +808,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qbL-kp-ax2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.43921568630000002" green="0.20392156859999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -23,7 +23,15 @@ import TTGSnackbar
  
  makeSettings()  is used for set the value of slider.
  
+ 
+ 2> For Navigation :  open HomeVC click on Nvigation Item ,set Back button : space (ie empty space)
+ 
+ 
+ 
+ 
  */
+
+
 
 let reachability = try! Reachability()
 
@@ -117,8 +125,11 @@ class HomeVC: UIViewController {
         //let array = str.components(separatedBy: "://")
         let data = str.replacingOccurrences(of: "iosscheme://", with: "")
         
+    
        
         print(data)
+       
+       
        
         setupSideMenu()
         

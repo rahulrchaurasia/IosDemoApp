@@ -46,7 +46,7 @@ class MenuDb {
     func  getBuissnessMenuData() ->  [MenuModel]
     {
         Menulist =  [MenuModel]()
-        Menulist.append(MenuModel(name: "Buissness" ,img: "ic_business_name" ,modelId: 101))
+        Menulist.append(MenuModel(name: "TableView Basic" ,img: "ic_business_name" ,modelId: 101))
         Menulist.append(MenuModel(name: "TableView Demo",img: "ic_business_name" ,modelId: 102))
         Menulist.append(MenuModel(name: "Buissness Data2",img: "ic_business_name" ,modelId: 103))
         Menulist.append(MenuModel(name: "TBuissness Data3",img: "ic_business_name" ,modelId: 104))
