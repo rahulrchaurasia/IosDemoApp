@@ -873,11 +873,11 @@ once your transaction is approved.</string>
             <objects>
                 <viewController storyboardIdentifier="ScrollViewDemoVC2" id="6SG-H6-L14" customClass="ScrollViewDemoVC2" customModule="Food_Corner" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aYT-9J-u0O">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1250"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1180"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9s-d9-ch4">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1250"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsm-yx-lYu" userLabel="containerView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1242"/>
@@ -1272,7 +1272,7 @@ once your transaction is approved.</string>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="elite_logo" translatesAutoresizingMaskIntoConstraints="NO" id="gKu-NG-djk">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner_old4" translatesAutoresizingMaskIntoConstraints="NO" id="gKu-NG-djk">
                                                                     <rect key="frame" x="318" y="10" width="70" height="70"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="70" id="clC-O9-uZL"/>
@@ -1450,6 +1450,54 @@ once your transaction is approved.</string>
                                                     <constraint firstItem="6yo-W3-2cl" firstAttribute="top" secondItem="2zZ-DG-hpK" secondAttribute="top" constant="10" id="zFV-qh-IHj"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flT-Uk-nZG" userLabel="deliveryView">
+                                                <rect key="frame" x="8" y="1092.6666666666667" width="398" height="74"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvi-GL-LF7">
+                                                        <rect key="frame" x="8" y="10" width="382" height="21"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="21" id="8DP-mc-xZ2"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fiv-p4-llW" userLabel="dividerView">
+                                                        <rect key="frame" x="0.0" y="39" width="398" height="1"/>
+                                                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="1xk-IH-bUL"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="GZV-xY-oHc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room No.10, Block 4/A, " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaD-pH-umA" userLabel="Price">
+                                                        <rect key="frame" x="8" y="48" width="382" height="18"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="4FN-Xl-hQU"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="RaD-pH-umA" secondAttribute="bottom" constant="8" id="9YV-Lw-OJ4"/>
+                                                    <constraint firstItem="Fiv-p4-llW" firstAttribute="top" secondItem="Wvi-GL-LF7" secondAttribute="bottom" constant="8" id="CGc-5Y-Ik0"/>
+                                                    <constraint firstItem="Fiv-p4-llW" firstAttribute="leading" secondItem="flT-Uk-nZG" secondAttribute="leading" id="IJ7-RB-9LG"/>
+                                                    <constraint firstItem="RaD-pH-umA" firstAttribute="top" secondItem="Fiv-p4-llW" secondAttribute="bottom" constant="8" id="Ko8-di-S0A"/>
+                                                    <constraint firstItem="Wvi-GL-LF7" firstAttribute="leading" secondItem="flT-Uk-nZG" secondAttribute="leading" constant="8" id="MZF-XC-XdE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Fiv-p4-llW" secondAttribute="trailing" id="jxa-1k-vqd"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Wvi-GL-LF7" secondAttribute="trailing" constant="8" id="lfL-3E-x4E"/>
+                                                    <constraint firstItem="RaD-pH-umA" firstAttribute="trailing" secondItem="Wvi-GL-LF7" secondAttribute="trailing" id="pNc-XZ-im9"/>
+                                                    <constraint firstItem="Wvi-GL-LF7" firstAttribute="top" secondItem="flT-Uk-nZG" secondAttribute="top" constant="10" id="sej-R7-Mg2"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="xuw-eE-rwL"/>
+                                                    <constraint firstItem="RaD-pH-umA" firstAttribute="leading" secondItem="Wvi-GL-LF7" secondAttribute="leading" id="zUr-8E-L74"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                         <constraints>
@@ -1459,10 +1507,12 @@ once your transaction is approved.</string>
                                             <constraint firstAttribute="bottom" secondItem="2zZ-DG-hpK" secondAttribute="bottom" constant="157.33000000000001" id="Ad3-dg-JnD"/>
                                             <constraint firstItem="scl-zc-eWJ" firstAttribute="trailing" secondItem="lEI-x1-fb3" secondAttribute="trailing" id="AdJ-bU-hdh"/>
                                             <constraint firstItem="Zcn-hl-YEM" firstAttribute="centerX" secondItem="u4g-xW-SIT" secondAttribute="centerX" id="FEX-BR-fBb"/>
+                                            <constraint firstItem="flT-Uk-nZG" firstAttribute="trailing" secondItem="lEI-x1-fb3" secondAttribute="trailing" id="HN6-9y-oBb"/>
                                             <constraint firstItem="2zZ-DG-hpK" firstAttribute="trailing" secondItem="lEI-x1-fb3" secondAttribute="trailing" id="HPZ-PK-KQN"/>
                                             <constraint firstItem="lEI-x1-fb3" firstAttribute="top" secondItem="Xsm-yx-lYu" secondAttribute="top" constant="8" id="HgV-R4-cZC"/>
                                             <constraint firstItem="2zZ-DG-hpK" firstAttribute="top" secondItem="546-r0-JK0" secondAttribute="bottom" constant="10" id="ICe-2v-Lqm"/>
                                             <constraint firstItem="HUo-oF-uPq" firstAttribute="leading" secondItem="u4g-xW-SIT" secondAttribute="leading" id="Joa-SD-OlO"/>
+                                            <constraint firstItem="flT-Uk-nZG" firstAttribute="top" secondItem="2zZ-DG-hpK" secondAttribute="bottom" constant="8" id="L1a-vL-fB9"/>
                                             <constraint firstItem="vxg-tj-KSP" firstAttribute="leading" secondItem="u4g-xW-SIT" secondAttribute="leading" id="L3I-LG-NMf"/>
                                             <constraint firstItem="ufu-bQ-7o2" firstAttribute="trailing" secondItem="u4g-xW-SIT" secondAttribute="trailing" id="Ly7-dd-Tl2"/>
                                             <constraint firstItem="diW-4G-OIk" firstAttribute="leading" secondItem="u4g-xW-SIT" secondAttribute="leading" id="MsO-dp-rBo"/>
@@ -1486,6 +1536,7 @@ once your transaction is approved.</string>
                                             <constraint firstItem="3g7-NQ-qsW" firstAttribute="leading" secondItem="u4g-xW-SIT" secondAttribute="leading" id="ihf-Yo-thy"/>
                                             <constraint firstItem="Zcn-hl-YEM" firstAttribute="leading" secondItem="u4g-xW-SIT" secondAttribute="leading" id="meE-Eu-pxT"/>
                                             <constraint firstItem="Zcn-hl-YEM" firstAttribute="trailing" secondItem="u4g-xW-SIT" secondAttribute="trailing" id="nab-H1-WZE"/>
+                                            <constraint firstItem="flT-Uk-nZG" firstAttribute="leading" secondItem="lEI-x1-fb3" secondAttribute="leading" id="nl8-bp-EeU"/>
                                             <constraint firstItem="2zZ-DG-hpK" firstAttribute="leading" secondItem="lEI-x1-fb3" secondAttribute="leading" id="oXj-GU-M7x"/>
                                             <constraint firstItem="scl-zc-eWJ" firstAttribute="leading" secondItem="lEI-x1-fb3" secondAttribute="leading" id="rvr-7p-A2G"/>
                                             <constraint firstItem="EnO-L0-S66" firstAttribute="top" secondItem="scl-zc-eWJ" secondAttribute="bottom" constant="8" id="sgg-TQ-5HK"/>
@@ -1516,7 +1567,7 @@ once your transaction is approved.</string>
                             <constraint firstItem="O9s-d9-ch4" firstAttribute="trailing" secondItem="fG3-Zn-L4j" secondAttribute="trailing" id="c1E-do-mTm"/>
                         </constraints>
                     </view>
-                    <size key="freeformSize" width="414" height="1250"/>
+                    <size key="freeformSize" width="414" height="1180"/>
                     <connections>
                         <outlet property="myTableView" destination="546-r0-JK0" id="CQh-9B-a8G"/>
                     </connections>
@@ -1614,10 +1665,10 @@ once your transaction is approved.</string>
     </scenes>
     <resources>
         <image name="CheckBox" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="banner_old4" width="440" height="219"/>
         <image name="categories" width="21.333333969116211" height="21.333333969116211"/>
         <image name="dot" width="24" height="24"/>
         <image name="dot-2" width="512" height="512"/>
-        <image name="elite_logo" width="127" height="80"/>
         <image name="inquiry" width="200" height="200"/>
         <image name="photo" catalog="system" width="128" height="93"/>
         <image name="settings" width="200" height="200"/>
