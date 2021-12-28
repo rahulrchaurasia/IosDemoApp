@@ -880,7 +880,7 @@ once your transaction is approved.</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="1176"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xsm-yx-lYu" userLabel="containerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1176"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1171.6666666666667"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lEI-x1-fb3" userLabel="orderView">
                                                 <rect key="frame" x="8" y="8" width="398" height="135"/>
@@ -1451,14 +1451,14 @@ once your transaction is approved.</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qv6-4e-sxr">
-                                                <rect key="frame" x="8" y="1092.6666666666667" width="398" height="73.333333333333258"/>
+                                                <rect key="frame" x="8" y="1092.6666666666667" width="398" height="69"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3S-M9-ICa">
                                                         <rect key="frame" x="8" y="8" width="382" height="18"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="18" id="4Ab-Eh-kjg"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1472,21 +1472,22 @@ once your transaction is approved.</string>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozr-XV-6QU">
-                                                        <rect key="frame" x="8" y="43" width="41.333333333333336" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room  no. 11,wnenvferv" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozr-XV-6QU">
+                                                        <rect key="frame" x="8" y="43" width="382" height="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="ozr-XV-6QU" secondAttribute="bottom" constant="8" id="87O-ER-DyK"/>
                                                     <constraint firstItem="O3S-M9-ICa" firstAttribute="leading" secondItem="Qv6-4e-sxr" secondAttribute="leading" constant="8" id="8Uc-Gx-gkl"/>
                                                     <constraint firstAttribute="trailing" secondItem="huM-Er-vGA" secondAttribute="trailing" id="9gV-mD-Lpd"/>
                                                     <constraint firstItem="ozr-XV-6QU" firstAttribute="top" secondItem="huM-Er-vGA" secondAttribute="bottom" constant="8" id="CHF-ej-2ug"/>
                                                     <constraint firstItem="huM-Er-vGA" firstAttribute="top" secondItem="O3S-M9-ICa" secondAttribute="bottom" constant="8" id="Gbi-EE-Pec"/>
                                                     <constraint firstItem="huM-Er-vGA" firstAttribute="leading" secondItem="Qv6-4e-sxr" secondAttribute="leading" id="J5g-NB-sqj"/>
-                                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ozr-XV-6QU" secondAttribute="trailing" constant="8" id="OPf-fK-lOL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ozr-XV-6QU" secondAttribute="trailing" constant="8" id="OPf-fK-lOL"/>
                                                     <constraint firstAttribute="trailing" secondItem="O3S-M9-ICa" secondAttribute="trailing" constant="8" id="Rcw-W4-UHC"/>
                                                     <constraint firstItem="O3S-M9-ICa" firstAttribute="top" secondItem="Qv6-4e-sxr" secondAttribute="top" constant="8" id="W9i-yX-hX8"/>
                                                     <constraint firstItem="ozr-XV-6QU" firstAttribute="leading" secondItem="Qv6-4e-sxr" secondAttribute="leading" constant="8" id="gUJ-ct-5aY"/>
