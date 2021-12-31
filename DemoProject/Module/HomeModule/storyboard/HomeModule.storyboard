@@ -1058,9 +1058,12 @@ once your transaction is approved.</string>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                 <color key="tintColor" red="1" green="0.57647058823529407" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
-                                                                <state key="normal" title="PAY ₹5790.00 NOW">
+                                                                <state key="normal" title="SHOW TABLE">
                                                                     <color key="titleColor" name="Color"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="btnShowTable:" destination="6SG-H6-L14" eventType="touchUpInside" id="eMt-Ug-Pn4"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ml-Dg-DJc">
                                                                 <rect key="frame" x="201" y="0.0" width="181" height="40"/>
@@ -1071,9 +1074,12 @@ once your transaction is approved.</string>
                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                                 <color key="tintColor" red="1" green="0.57647058819999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
-                                                                <state key="normal" title="BANK TRANSFER">
+                                                                <state key="normal" title="HIDE TABLE">
                                                                     <color key="titleColor" name="Color"/>
                                                                 </state>
+                                                                <connections>
+                                                                    <action selector="btnHideTable:" destination="6SG-H6-L14" eventType="touchUpInside" id="S4R-xf-BqE"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -1567,6 +1573,8 @@ once your transaction is approved.</string>
                     <size key="freeformSize" width="414" height="1172"/>
                     <connections>
                         <outlet property="myTableView" destination="546-r0-JK0" id="CQh-9B-a8G"/>
+                        <outlet property="myTableViewHeightConstant" destination="jo1-9L-KZg" id="HWJ-D4-z8V"/>
+                        <outlet property="scrollView" destination="O9s-d9-ch4" id="yTS-ce-ITs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zS1-r4-bkU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -21,8 +21,11 @@ import UIKit
 class ScrollViewDemoVC2: UIViewController ,UITableViewDataSource, UITableViewDelegate {
    
     
+    @IBOutlet weak var scrollView: UIScrollView!
     
     @IBOutlet weak var myTableView: UITableView!
+    
+    @IBOutlet weak var myTableViewHeightConstant: NSLayoutConstraint!
     var items = ["Item 1", "Item2", "Item3", "Item4",
                  "Item 5", "Item6", "Item7", "Item8",
                  "Item 9", "Item10", "Item11", "Item12",
@@ -43,7 +46,30 @@ class ScrollViewDemoVC2: UIViewController ,UITableViewDataSource, UITableViewDel
         
        // self.demoTableView.rowHeight = 44;
         
+        self.myTableView.isHidden = true
+        self.myTableViewHeightConstant.constant = 0
+
+        scrollView.layoutIfNeeded()
+        
     }
+    
+    @IBAction func btnShowTable(_ sender: Any) {
+        
+        self.myTableView.isHidden = false
+        self.myTableViewHeightConstant.constant = 200
+
+        scrollView.layoutIfNeeded()
+    }
+    
+    
+    @IBAction func btnHideTable(_ sender: Any) {
+        
+        self.myTableView.isHidden = true
+        self.myTableViewHeightConstant.constant = 0
+
+        scrollView.layoutIfNeeded()
+    }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         

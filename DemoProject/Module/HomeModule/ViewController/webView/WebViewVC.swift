@@ -29,10 +29,11 @@ class WebViewVC: UIViewController,  WKNavigationDelegate ,UIDocumentInteractionC
         
         
         //let insURL = "http://elite.interstellar.co.in/iostest.html"
-       // let insURL = "http://elite.interstellar.co.in/iostestnew.html"
         
-        let insURL =  "http://origin-cdnh.policyboss.com/fmweb/motor/tw-main-page.html?ss_id=8145&fba_id=5631&v=20200609&sub_fba_id=0&ip_address=10.0.0.1&mac_address=10.0.0.1&app_version=1.0.1&product_id=1&device_id=594ad17c0ec7fd1e&login_ssid="
-       
+        let insURL = "http://elite.interstellar.co.in/iostestnew.html"
+        
+//        let insURL =  "http://origin-cdnh.policyboss.com/fmweb/motor/tw-main-page.html?ss_id=8145&fba_id=5631&v=20200609&sub_fba_id=0&ip_address=10.0.0.1&mac_address=10.0.0.1&app_version=1.0.1&product_id=1&device_id=594ad17c0ec7fd1e&login_ssid="
+
         webview.navigationDelegate =  self
         webview.configuration.preferences.javaScriptEnabled = true
         
