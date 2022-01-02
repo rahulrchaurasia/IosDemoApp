@@ -11,6 +11,7 @@ import UIKit
 class ScrollWithTableVC: UIViewController , UITableViewDataSource , UITableViewDelegate {
    
 
+    @IBOutlet weak var appBar: AppBarView!
     @IBOutlet weak var myTableView: UITableView!
     
     var items = ["Item 1", "Item2", "Item3", "Item4",
@@ -20,10 +21,31 @@ class ScrollWithTableVC: UIViewController , UITableViewDataSource , UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+               appBar.lblTitle.text =  "Table With Header and Footer"
+               
+               let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
+               
+               self.appBar.btnBack.addGestureRecognizer(gesture)
     }
     
-
+    @objc func clickAction(sender : UITapGestureRecognizer) {
+        
+      
+        switch sender.view {
+          case appBar.btnBack:
+              print("tapped Image View 1") //add your actions here
+              navigationController?.popViewController(animated: true)
+    
+          default:
+              print("Tap not detected")
+          
+           
+          }
+        
+       
+        
+    }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         items.count
