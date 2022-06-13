@@ -90,6 +90,30 @@
 		B2FA8A112691A20900A02640 /* TestVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8A102691A20900A02640 /* TestVew.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CD8AE968285730BE0037748D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8AE962285730BD0037748D /* FirstApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD8AE935285730BC0037748D;
+			remoteInfo = FirstApp;
+		};
+		CD8AE96A285730BE0037748D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8AE962285730BD0037748D /* FirstApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD8AE945285730BD0037748D;
+			remoteInfo = FirstAppTests;
+		};
+		CD8AE96C285730BE0037748D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD8AE962285730BD0037748D /* FirstApp.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD8AE94F285730BD0037748D;
+			remoteInfo = FirstAppUITests;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		2DE43D00A7788C9EDD1D6BEE /* Pods-DemoProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.release.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.release.xcconfig"; sourceTree = "<group>"; };
 		3DA8F55107928F896886388B /* Pods-DemoProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoProject.debug.xcconfig"; path = "Target Support Files/Pods-DemoProject/Pods-DemoProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,6 +199,7 @@
 		B2FA8A0E2691A13500A02640 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		B2FA8A102691A20900A02640 /* TestVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVew.swift; sourceTree = "<group>"; };
 		B6A0BF1A45371050EF6B52D8 /* Pods_DemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8AE962285730BD0037748D /* FirstApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FirstApp.xcodeproj; path = ../../../../../../../FirstApp/FirstApp.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,6 +235,7 @@
 		B202A8B3260B282600962931 /* ResponseModel */ = {
 			isa = PBXGroup;
 			children = (
+				CD8AE962285730BD0037748D /* FirstApp.xcodeproj */,
 				B2B7FECF25FF76D4001B6514 /* LoginResponse.swift */,
 			);
 			path = ResponseModel;
@@ -568,6 +594,16 @@
 			path = HomeModule;
 			sourceTree = "<group>";
 		};
+		CD8AE963285730BD0037748D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD8AE969285730BE0037748D /* FirstApp.app */,
+				CD8AE96B285730BE0037748D /* FirstAppTests.xctest */,
+				CD8AE96D285730BE0037748D /* FirstAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -622,12 +658,42 @@
 			);
 			productRefGroup = B29D506025EA7639002CC586 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD8AE963285730BD0037748D /* Products */;
+					ProjectRef = CD8AE962285730BD0037748D /* FirstApp.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B29D505E25EA7639002CC586 /* DemoProject */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD8AE969285730BE0037748D /* FirstApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = FirstApp.app;
+			remoteRef = CD8AE968285730BE0037748D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD8AE96B285730BE0037748D /* FirstAppTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FirstAppTests.xctest;
+			remoteRef = CD8AE96A285730BE0037748D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD8AE96D285730BE0037748D /* FirstAppUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = FirstAppUITests.xctest;
+			remoteRef = CD8AE96C285730BE0037748D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B29D505D25EA7639002CC586 /* Resources */ = {
