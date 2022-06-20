@@ -200,6 +200,7 @@
 		B2FA8A102691A20900A02640 /* TestVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVew.swift; sourceTree = "<group>"; };
 		B6A0BF1A45371050EF6B52D8 /* Pods_DemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8AE962285730BD0037748D /* FirstApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FirstApp.xcodeproj; path = ../../../../../../../FirstApp/FirstApp.xcodeproj; sourceTree = "<group>"; };
+		CDCE14FF2858955600D9CDF5 /* Razorpay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Razorpay.xcframework; path = "Pods/razorpay-pod/Pod/Razorpay.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +219,7 @@
 		48FB069446F2D56EC25C3C61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDCE14FF2858955600D9CDF5 /* Razorpay.xcframework */,
 				B6A0BF1A45371050EF6B52D8 /* Pods_DemoProject.framework */,
 			);
 			name = Frameworks;
@@ -978,6 +980,10 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QKGN99NT9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -998,6 +1004,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DemoProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
