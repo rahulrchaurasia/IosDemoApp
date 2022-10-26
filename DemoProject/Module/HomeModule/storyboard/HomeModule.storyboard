@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
@@ -1263,7 +1262,7 @@ once your transaction is approved.</string>
                                                 </constraints>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="150" id="g3B-Df-5nl" customClass="ScrollDemoVC2TVCell" customModule="Food_Corner" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="24.333333969116211" width="398" height="150"/>
+                                                        <rect key="frame" x="0.0" y="44.666666030883789" width="398" height="150"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g3B-Df-5nl" id="8rI-fe-Iez">
                                                             <rect key="frame" x="0.0" y="0.0" width="398" height="150"/>
@@ -1667,9 +1666,92 @@ once your transaction is approved.</string>
             </objects>
             <point key="canvasLocation" x="1406" y="-997"/>
         </scene>
+        <!--Bottom SheetVC-->
+        <scene sceneID="MZN-Tz-rsb">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetVC" id="Z3n-Ng-8cl" customClass="BottomSheetVC" customModule="Food_Corner" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T8j-SV-9fe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daa-3t-9e8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Kun-LV-cPP"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="BottomUISheet Presentation" largeTitleDisplayMode="always" id="XZv-QR-N4y">
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="antique_filter" id="l3l-Ej-X5Z">
+                                            <connections>
+                                                <action selector="btnShowBottomSheet:" destination="Z3n-Ng-8cl" id="92I-em-I1x"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cq-rP-875">
+                                <rect key="frame" x="112.66666666666667" y="284.66666666666669" width="188.66666666666663" height="48"/>
+                                <color key="backgroundColor" red="0.35405003909999999" green="0.92266027709999998" blue="0.89038635359999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="2x8-gA-bPw"/>
+                                </constraints>
+                                <color key="tintColor" red="0.28432637300000002" green="0.74095924609999997" blue="0.71504108040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Move to SwiftUI (Tab Bar)"/>
+                                <connections>
+                                    <action selector="btnShowTabBarUIView:" destination="Z3n-Ng-8cl" eventType="touchUpInside" id="QV4-tW-Y01"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-7o-QKc">
+                                <rect key="frame" x="130" y="352.66666666666669" width="154" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0dZ-Md-dfp"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Storyboard refernce"/>
+                                <connections>
+                                    <segue destination="SmS-7Q-4Pl" kind="show" id="rUP-YX-Z88"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sZb-mE-88O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerY" secondItem="T8j-SV-9fe" secondAttribute="centerY" id="1IQ-KJ-EQB"/>
+                            <constraint firstItem="sZb-mE-88O" firstAttribute="trailing" secondItem="F0P-7o-QKc" secondAttribute="trailing" constant="130" id="4kG-IB-HgJ"/>
+                            <constraint firstItem="F0P-7o-QKc" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" constant="130" id="6Di-pG-dqY"/>
+                            <constraint firstItem="8Cq-rP-875" firstAttribute="centerX" secondItem="F0P-7o-QKc" secondAttribute="centerX" id="9wk-5E-vgD"/>
+                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerY" secondItem="T8j-SV-9fe" secondAttribute="centerY" id="NJZ-Zz-aH7"/>
+                            <constraint firstItem="daa-3t-9e8" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" id="VWC-Jt-2FE"/>
+                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerX" secondItem="T8j-SV-9fe" secondAttribute="centerX" id="aPV-z5-5Ad"/>
+                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerX" secondItem="T8j-SV-9fe" secondAttribute="centerX" id="gYH-hA-7gf"/>
+                            <constraint firstItem="daa-3t-9e8" firstAttribute="trailing" secondItem="sZb-mE-88O" secondAttribute="trailing" id="jCX-KX-TUn"/>
+                            <constraint firstItem="8Cq-rP-875" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" constant="112.66666666666669" id="jNX-VS-c1o"/>
+                            <constraint firstItem="F0P-7o-QKc" firstAttribute="top" secondItem="8Cq-rP-875" secondAttribute="bottom" constant="20" id="ooc-aH-Qjm"/>
+                            <constraint firstItem="daa-3t-9e8" firstAttribute="top" secondItem="sZb-mE-88O" secondAttribute="top" id="rnk-jO-7Ps"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jz3-BY-rnH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2363.768115942029" y="-997.01086956521749"/>
+        </scene>
+        <!--BaicTableDemoVC-->
+        <scene sceneID="REO-Po-DaG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BuisinessModule" referencedIdentifier="BaicTableDemoVC" id="SmS-7Q-4Pl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="9YS-Dl-3M0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I3a-IN-6FC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956" y="-1000"/>
+        </scene>
     </scenes>
     <resources>
         <image name="CheckBox" width="21.333333969116211" height="21.333333969116211"/>
+        <image name="antique_filter" width="14" height="12.666666984558105"/>
         <image name="banner_old4" width="440" height="219"/>
         <image name="categories" width="21.333333969116211" height="21.333333969116211"/>
         <image name="dot" width="24" height="24"/>

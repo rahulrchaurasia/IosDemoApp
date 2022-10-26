@@ -36,7 +36,9 @@ class NotificationVC: UIViewController {
     
     @IBAction func homeClick(_ sender: Any) {
         
-        navigationController?.popToRootViewController(animated: true)
+     //   navigationController?.popToRootViewController(animated: true)
+        
+        showAlert(message: "Data")
         
     }
     

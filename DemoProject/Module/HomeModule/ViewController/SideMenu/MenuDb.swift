@@ -36,7 +36,7 @@ class MenuDb {
         Menulist.append(MenuModel(name: "Constrain Layout",img: "home1", modelId: 2))
         Menulist.append(MenuModel(name: "WebView - HTML",img: "home1", modelId: 3))
         Menulist.append(MenuModel(name: "WebView - URL",img: "home1", modelId: 4))
-        Menulist.append(MenuModel(name: "Home Data4",img: "home1" ,modelId: 5))
+        Menulist.append(MenuModel(name: "Bottom Sheet Presentation",img: "home1" ,modelId: 5))
         Menulist.append(MenuModel(name: "Home Data5",img: "home1" ,modelId: 6))
         Menulist.append(MenuModel(name: "Home Data6",img: "home1" ,modelId: 7))
         return Menulist

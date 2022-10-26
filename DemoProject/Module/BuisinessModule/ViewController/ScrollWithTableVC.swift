@@ -16,7 +16,7 @@ class ScrollWithTableVC: UIViewController , UITableViewDataSource , UITableViewD
     
     var items = ["Item 1", "Item2", "Item3", "Item4",
                  "Item 5", "Item6", "Item7", "Item8",
-                 "Item 9", "Item10", "Item11", "Item12"]
+                 "Item 9", "Item10", "Item11", "Item12 bjbjbjbjbjbjbjbj"]
 
     override func viewDidLoad() {
         super.viewDidLoad()

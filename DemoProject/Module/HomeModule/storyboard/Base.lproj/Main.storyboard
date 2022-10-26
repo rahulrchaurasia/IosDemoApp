@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="62c-fd-48c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="62c-fd-48c">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -374,8 +373,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Food Corner" id="gJH-4N-6y4">
                         <barButtonItem key="backBarButtonItem" id="GWP-Va-qcT"/>
-                        <barButtonItem key="leftBarButtonItem" image="menu-button-of-three-lines" id="o83-rU-xVe">
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="menuBtn" id="o83-rU-xVe">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="didTapMenuButton" destination="dSL-DK-HdV" id="wLA-mM-46h"/>
                                 <segue destination="aNK-a5-keO" kind="show" id="1K3-vf-JwS"/>
@@ -596,7 +595,7 @@
                                 <rect key="frame" x="0.0" y="194" width="414" height="619"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="76" id="BkQ-w0-2Ff" customClass="SideMenuTableViewCell" customModule="Food_Corner" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="414" height="76"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="76"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BkQ-w0-2Ff" id="KjN-ge-vff">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="76"/>
@@ -642,13 +641,13 @@
                         <viewLayoutGuide key="safeArea" id="LOM-k5-EjK"/>
                         <color key="backgroundColor" red="0.43921568630000002" green="0.20392156859999999" blue="0.85098039219999999" alpha="0.719049559" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="byg-sQ-Yux" firstAttribute="bottom" secondItem="LOM-k5-EjK" secondAttribute="bottom" id="AkD-0e-zK5"/>
-                            <constraint firstItem="byg-sQ-Yux" firstAttribute="top" secondItem="6pM-Bs-Q7t" secondAttribute="bottom" id="nMX-5K-gzZ"/>
-                            <constraint firstItem="byg-sQ-Yux" firstAttribute="leading" secondItem="LOM-k5-EjK" secondAttribute="leading" id="s0K-xI-FjM"/>
+                            <constraint firstItem="byg-sQ-Yux" firstAttribute="bottom" secondItem="LOM-k5-EjK" secondAttribute="bottom" id="PFG-KS-neA"/>
+                            <constraint firstItem="byg-sQ-Yux" firstAttribute="leading" secondItem="LOM-k5-EjK" secondAttribute="leading" id="UNJ-oD-w7z"/>
+                            <constraint firstItem="byg-sQ-Yux" firstAttribute="trailing" secondItem="LOM-k5-EjK" secondAttribute="trailing" id="Uad-KS-uI7"/>
+                            <constraint firstItem="byg-sQ-Yux" firstAttribute="top" secondItem="6pM-Bs-Q7t" secondAttribute="bottom" id="eMW-6k-N6B"/>
                             <constraint firstItem="6pM-Bs-Q7t" firstAttribute="top" secondItem="LOM-k5-EjK" secondAttribute="top" id="wjp-ci-mtM"/>
                             <constraint firstItem="6pM-Bs-Q7t" firstAttribute="trailing" secondItem="LOM-k5-EjK" secondAttribute="trailing" id="ygR-1M-Dd9"/>
                             <constraint firstItem="6pM-Bs-Q7t" firstAttribute="leading" secondItem="LOM-k5-EjK" secondAttribute="leading" id="zcY-Ls-Qxh"/>
-                            <constraint firstItem="byg-sQ-Yux" firstAttribute="trailing" secondItem="LOM-k5-EjK" secondAttribute="trailing" id="zvR-JR-V9y"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="ApR-5Z-wfi">
@@ -826,7 +825,7 @@
         <image name="home" width="30" height="30"/>
         <image name="home_selected" width="24" height="24"/>
         <image name="ic_password_invisible" width="54" height="54"/>
-        <image name="menu-button-of-three-lines" width="30" height="30"/>
+        <image name="menuBtn" width="32" height="32"/>
         <image name="notification_selected" width="24" height="24"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="rupee_selected" width="24" height="24"/>

@@ -118,6 +118,12 @@ class SlideMenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
               
             navigationController?.pushViewController(WebViewVC.shareInstance(), animated: true)
             
+        case 5 :
+            
+              
+            navigationController?.pushViewController(BottomSheetVC.shareInstance(), animated: true)
+            
+            
             
         case 101 :
             
