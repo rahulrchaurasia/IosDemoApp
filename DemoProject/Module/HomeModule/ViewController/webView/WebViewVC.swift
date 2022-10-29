@@ -8,6 +8,12 @@
 
 import UIKit
 import WebKit
+/*
+ 
+ Note : use    navigationController?.setNavigationBarHidden(true, animated: false)
+  Default Space Between UI and TOP ie Space Due to navigation title bar
+ 
+ */
 class WebViewVC: UIViewController,  WKNavigationDelegate ,UIDocumentInteractionControllerDelegate{
   
   
@@ -16,9 +22,21 @@ class WebViewVC: UIViewController,  WKNavigationDelegate ,UIDocumentInteractionC
         super.viewDidLoad()
 
         bindURL()
+        
+        // For hiding the title bar
+    
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
- 
+    @IBAction func btnBack(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func btnData(_ sender: Any) {
+        
+        showAlert(message: "Document Data")
+    }
+    
     @IBAction func btnShareClick(_ sender: UIBarButtonItem) {
         
         let str = "http://horizon.policyboss.com:5000/tmp/fm_quoteshare/4732631_1_1711202184218.pdf"

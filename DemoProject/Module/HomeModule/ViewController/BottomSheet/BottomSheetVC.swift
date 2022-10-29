@@ -17,11 +17,21 @@ class BottomSheetVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        navigationItem.backBarButtonItem = UIBarButtonItem(title: "back", style: .plain, target: nil, action: nil)
 
         // Do any additional setup after loading the view.
+        
+        // For hiding the title bar
+    
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
-
+    @IBAction func btnBack(_ sender: Any) {
+        
+        navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func btnShowBottomSheet(_ sender: Any) {
         
         //        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewVC") as? WebViewVC{

@@ -2,8 +2,8 @@
 //  AppBarView.swift
 //  DemoProject
 //
-//  Created by Daniyal Shaikh on 02/01/22.
-//  Copyright © 2022 Nilesh Birhade. All rights reserved.
+//  Created by Rahul on 02/01/22.
+//  Copyright © 2022 Rahul. All rights reserved.
 //
 
 import UIKit

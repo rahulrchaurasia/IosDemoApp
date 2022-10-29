@@ -31,6 +31,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     var iconClick = true
     
     override func viewWillAppear(_ animated: Bool) {
+        
+        //Important
         navigationController?.setNavigationBarHidden(true, animated: false)  // For hiding the title bar
     }
     

@@ -11,7 +11,7 @@
         <!--Baic Table DemoVC-->
         <scene sceneID="QyO-or-jNZ">
             <objects>
-                <viewController storyboardIdentifier="BaicTableDemoVC" id="Gis-cR-0Tb" customClass="BaicTableDemoVC" customModule="Food_Corner" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BaicTableDemoVC" id="Gis-cR-0Tb" customClass="BaicTableDemoVC" customModule="Food_Corner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TjW-Tc-DAq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

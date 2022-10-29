@@ -22,6 +22,11 @@
  */
 import UIKit
 
+/*
+Note : In UI  AppBar XIB added for  Handling Navigation Title custom
+ 
+ */
+
 class BaicTableDemoVC: UIViewController , UITableViewDataSource , UITableViewDelegate {
     
     @IBOutlet weak var appBar: AppBarView!

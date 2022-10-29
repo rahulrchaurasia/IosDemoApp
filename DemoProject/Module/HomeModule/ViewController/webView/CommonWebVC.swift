@@ -9,10 +9,16 @@
 import UIKit
 import WebKit
 
+/*
+Note : In UI  AppBar XIB added for  Handling Navigation Title custom
+ 
+*/
+
 class CommonWebVC: UIViewController , WKNavigationDelegate, WKScriptMessageHandler {
   
     
 
+    @IBOutlet weak var appBar: AppBarView!
     
     @IBOutlet weak var webview: WKWebView!
     
@@ -23,6 +29,30 @@ class CommonWebVC: UIViewController , WKNavigationDelegate, WKScriptMessageHandl
        
 
        // webview.load(URLRequest(url: URL(string: "https://www.google.com")!))
+        
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        appBar.lblTitle.text =  "WebView Demo"
+        
+        let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))
+        
+        self.appBar.btnBack.addGestureRecognizer(gesture)
+    }
+    
+    @objc func clickAction(sender : UITapGestureRecognizer) {
+      
+        switch sender.view {
+          case appBar.btnBack:
+              print("tapped Image View 1") //add your actions here
+              navigationController?.popViewController(animated: true)
+    
+          default:
+              print("Tap not detected")
+          
+           
+          }
+        
+    
+        
     }
     
     func updateUIView(_ webView: WKWebView) {
