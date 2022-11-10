@@ -7,6 +7,14 @@
 //
 //https://stackoverflow.com/questions/52003086/uibutton-action-is-not-triggered-after-constraint-layouts-changed
 
+//https://www.youtube.com/watch?v=ZsNaLabb0YM
+
+/******************For Scrollview : *********************************************************
+
+  https://www.youtube.com/watch?v=_Qn3UGad3lg&t=41s
+*********************************************************************************************/
+
+//Note  Scrollview : Remove for Content Layout Guide : "uncheck the Content Layout Guides" in right Tools second last option
      //*******************  {A} Scroollview / Clip to bound  ***************************//
 // {A} Scroollview : container height and width  equal to scrollview. but container height set to low priority ie 250
 

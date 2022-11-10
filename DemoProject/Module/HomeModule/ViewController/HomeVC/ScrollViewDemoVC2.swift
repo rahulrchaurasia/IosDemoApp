@@ -9,12 +9,22 @@
         
  https://www.youtube.com/watch?v=INkeINPZddo
  
+ 
+ ******************For Scrollview : *****************************
+ 
+   https://www.youtube.com/watch?v=_Qn3UGad3lg&t=41s
+ *****************************************************************
+ 
  Note : TableView Inside ScrollView :
  
  1> we have to give height to Our table View Other wise it will not display
  
  2> or we have to set height of tableview according with scroolview(eg used above link)
 
+ 
+ //Note  Scrollview : Remove for Content Layout Guide : "uncheck the Content Layout Guides" in right Tools second last option
+ 
+ StackView : https://spin.atomicobject.com/2016/06/22/uistackview-distribution/
  */
 import UIKit
 

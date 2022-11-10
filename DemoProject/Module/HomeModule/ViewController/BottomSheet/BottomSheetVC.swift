@@ -32,6 +32,11 @@ class BottomSheetVC: UIViewController {
         navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func btnShowTabBar(_ sender: Any) {
+        
+        navigationController?.pushViewController(TabBarDemoVC.shareInstance(), animated: true)
+    }
+    
     @IBAction func btnShowBottomSheet(_ sender: Any) {
         
         //        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "WebViewVC") as? WebViewVC{
@@ -54,7 +59,8 @@ class BottomSheetVC: UIViewController {
                 sheet.prefersGrabberVisible = true  // Grab Button
                 sheet.preferredCornerRadius = 32
             }
-            self.navigationController?.present(vc, animated: true)
+            //self.navigationController?.present(vc, animated: true)
+            present(vc, animated: true)
         }
         
         

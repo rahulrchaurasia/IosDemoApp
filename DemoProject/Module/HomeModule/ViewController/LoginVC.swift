@@ -15,6 +15,10 @@ import SVProgressHUD
 /*
  Note  : We Use navigationController?.pushViewController
  two ways 1> pushViewController  2> Present
+ 
+ For hiding the title bar :
+ navigationController?.setNavigationBarHidden(true, animated: false) 
+ 
  */
 
 class LoginVC: UIViewController, UITextFieldDelegate {

@@ -68,7 +68,7 @@
 		B2B67BA92687640400999FAD /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B67BA82687640400999FAD /* Extension+UIApplication.swift */; };
 		B2B67BAB2687669E00999FAD /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B67BAA2687669E00999FAD /* UserDefault.swift */; };
 		B2B7FED025FF76D4001B6514 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7FECF25FF76D4001B6514 /* LoginResponse.swift */; };
-		B2BD1EA22615C1B2002F14D4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD1EA12615C1B2002F14D4 /* test.swift */; };
+		B2BD1EA22615C1B2002F14D4 /* NoteAndRefrence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BD1EA12615C1B2002F14D4 /* NoteAndRefrence.swift */; };
 		B2BDBBA826089ACF00B0DEA9 /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BDBBA726089ACF00B0DEA9 /* Extension+UITextField.swift */; };
 		B2C342352768A3590069D0A2 /* ScrollViewDemoVC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C342342768A3590069D0A2 /* ScrollViewDemoVC2.swift */; };
 		B2C3CB90278160DE00E1D518 /* AppBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2C3CB8F278160DE00E1D518 /* AppBarView.xib */; };
@@ -88,6 +88,17 @@
 		B2FA8A0C26918ECD00A02640 /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8A0B26918ECD00A02640 /* CustomVC.swift */; };
 		B2FA8A0F2691A13500A02640 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2FA8A0E2691A13500A02640 /* TestView.xib */; };
 		B2FA8A112691A20900A02640 /* TestVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8A102691A20900A02640 /* TestVew.swift */; };
+		CD285485291A1C8700FBB914 /* ImageCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD285484291A1C8700FBB914 /* ImageCollectionView.swift */; };
+		CD2D676C29129F5F00DF42D9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2D676A29129F5F00DF42D9 /* CollectionViewCell.swift */; };
+		CD2D676D29129F5F00DF42D9 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD2D676B29129F5F00DF42D9 /* CollectionViewCell.xib */; };
+		CD34A751291BD6E3001704CF /* ExpandableTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD34A750291BD6E3001704CF /* ExpandableTableVC.swift */; };
+		CD40722F29139180004F68A8 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40722E29139180004F68A8 /* UPCarouselFlowLayout.swift */; };
+		CD407231291394C7004F68A8 /* StructCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD407230291394C7004F68A8 /* StructCollection.swift */; };
+		CD41B289290F9D4B004ACDD8 /* TabBarMainHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD41B288290F9D4B004ACDD8 /* TabBarMainHome.swift */; };
+		CD4BA773291917C200ED0E05 /* dashBoardShortViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA771291917C200ED0E05 /* dashBoardShortViewCell.swift */; };
+		CD4BA77629193D5400ED0E05 /* CustomCollectionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4BA77529193D5400ED0E05 /* CustomCollectionFlowLayout.swift */; };
+		CD54F1852912387C00DEA682 /* Extension+UIViewWithIBDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54F1842912387C00DEA682 /* Extension+UIViewWithIBDesign.swift */; };
+		CD54F187291240E900DEA682 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD54F186291240E900DEA682 /* Extension+UIView.swift */; };
 		CD7E484B290D2BFE00C7CE1B /* TabBarDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7E484A290D2BFE00C7CE1B /* TabBarDemoVC.swift */; };
 		CDA2AC5D29092D8500F5917C /* BottomSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2AC5C29092D8500F5917C /* BottomSheetVC.swift */; };
 		CDA2AC6029093DEF00F5917C /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA2AC5F29093DEF00F5917C /* SwiftUIView.swift */; };
@@ -185,7 +196,7 @@
 		B2B67BA82687640400999FAD /* Extension+UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
 		B2B67BAA2687669E00999FAD /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
 		B2B7FECF25FF76D4001B6514 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		B2BD1EA12615C1B2002F14D4 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		B2BD1EA12615C1B2002F14D4 /* NoteAndRefrence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteAndRefrence.swift; sourceTree = "<group>"; };
 		B2BDBBA726089ACF00B0DEA9 /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		B2C342342768A3590069D0A2 /* ScrollViewDemoVC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemoVC2.swift; sourceTree = "<group>"; };
 		B2C3CB8F278160DE00E1D518 /* AppBarView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppBarView.xib; sourceTree = "<group>"; };
@@ -206,6 +217,17 @@
 		B2FA8A0E2691A13500A02640 /* TestView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		B2FA8A102691A20900A02640 /* TestVew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVew.swift; sourceTree = "<group>"; };
 		B6A0BF1A45371050EF6B52D8 /* Pods_DemoProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD285484291A1C8700FBB914 /* ImageCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionView.swift; sourceTree = "<group>"; };
+		CD2D676A29129F5F00DF42D9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		CD2D676B29129F5F00DF42D9 /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		CD34A750291BD6E3001704CF /* ExpandableTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableTableVC.swift; sourceTree = "<group>"; };
+		CD40722E29139180004F68A8 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
+		CD407230291394C7004F68A8 /* StructCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructCollection.swift; sourceTree = "<group>"; };
+		CD41B288290F9D4B004ACDD8 /* TabBarMainHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarMainHome.swift; sourceTree = "<group>"; };
+		CD4BA771291917C200ED0E05 /* dashBoardShortViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dashBoardShortViewCell.swift; sourceTree = "<group>"; };
+		CD4BA77529193D5400ED0E05 /* CustomCollectionFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionFlowLayout.swift; sourceTree = "<group>"; };
+		CD54F1842912387C00DEA682 /* Extension+UIViewWithIBDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewWithIBDesign.swift"; sourceTree = "<group>"; };
+		CD54F186291240E900DEA682 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		CD7E484A290D2BFE00C7CE1B /* TabBarDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarDemoVC.swift; sourceTree = "<group>"; };
 		CD8AE962285730BD0037748D /* FirstApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FirstApp.xcodeproj; path = ../../../../../../../FirstApp/FirstApp.xcodeproj; sourceTree = "<group>"; };
 		CDA2AC5C29092D8500F5917C /* BottomSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetVC.swift; sourceTree = "<group>"; };
@@ -296,6 +318,9 @@
 		B256FBD02763CCDC00C53B03 /* HomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				CD34A74F291BD67D001704CF /* ExpandableTableView */,
+				CD285483291A1C6900FBB914 /* CustomCollectionView */,
+				B29C09F02689B43F00967F5A /* TabBarHomeVC */,
 				B2C89A8D27651E8A00F0B04E /* ScrollDemoVC.swift */,
 				B2C342342768A3590069D0A2 /* ScrollViewDemoVC2.swift */,
 				B2A79F162771A7E300A87370 /* ScrollDemoVC2TVCell.swift */,
@@ -329,10 +354,10 @@
 		B290B6362603CCFE008602A2 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				CD41B287290F9CE7004ACDD8 /* TabbarMainHome */,
 				CD7E4849290D2BBF00C7CE1B /* TabbarViaCode */,
 				B256FBD02763CCDC00C53B03 /* HomeVC */,
 				B2F389BD2743EB89007B137E /* webView */,
-				B29C09F02689B43F00967F5A /* TabBarChild */,
 				B24C7D98268464D10014342F /* bannerSlider */,
 				CDA2AC5B29092D2C00F5917C /* BottomSheet */,
 				B293C1DC260A006500263C10 /* SideMenu */,
@@ -369,15 +394,17 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
-		B29C09F02689B43F00967F5A /* TabBarChild */ = {
+		B29C09F02689B43F00967F5A /* TabBarHomeVC */ = {
 			isa = PBXGroup;
 			children = (
+				CD40722E29139180004F68A8 /* UPCarouselFlowLayout.swift */,
+				CD40722D2913904C004F68A8 /* CollectionViewForHistory */,
 				B22C10AB269051B100DCFD4C /* HistoryVC.swift */,
 				B22C10AD2690609D00DCFD4C /* MoneyVC.swift */,
 				B22C10AF269060B300DCFD4C /* AddVC.swift */,
 				B22C10B1269060CD00DCFD4C /* NotificationVC.swift */,
 			);
-			path = TabBarChild;
+			path = TabBarHomeVC;
 			sourceTree = "<group>";
 		};
 		B29D505625EA7639002CC586 = {
@@ -401,6 +428,7 @@
 		B29D506125EA7639002CC586 /* DemoProject */ = {
 			isa = PBXGroup;
 			children = (
+				B29D506B25EA763B002CC586 /* Assets.xcassets */,
 				B2CB77532760B8F600870417 /* Module */,
 				B2F389C02743F0DA007B137E /* html */,
 				B27A2B4B25FB4146002CF4F8 /* Constant */,
@@ -411,10 +439,9 @@
 				B2FA8A0826918E5B00A02640 /* CustomModule */,
 				B2AE2AEB25FB8D67000E7710 /* APIManager */,
 				B202A8B6260B2B5D00962931 /* Delegate */,
-				B29D506B25EA763B002CC586 /* Assets.xcassets */,
 				B29D506D25EA763B002CC586 /* LaunchScreen.storyboard */,
 				B29D507025EA763B002CC586 /* Info.plist */,
-				B2BD1EA12615C1B2002F14D4 /* test.swift */,
+				B2BD1EA12615C1B2002F14D4 /* NoteAndRefrence.swift */,
 			);
 			path = DemoProject;
 			sourceTree = "<group>";
@@ -516,6 +543,8 @@
 				B2B67BA82687640400999FAD /* Extension+UIApplication.swift */,
 				B28BDBB22701BB6D00C5DE95 /* Extension+Notification.swift */,
 				B2A4394127676B3000D9374A /* Extension+ScrollView.swift */,
+				CD54F1842912387C00DEA682 /* Extension+UIViewWithIBDesign.swift */,
+				CD54F186291240E900DEA682 /* Extension+UIView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -611,6 +640,42 @@
 				B290B6362603CCFE008602A2 /* ViewController */,
 			);
 			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		CD285483291A1C6900FBB914 /* CustomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				CD285484291A1C8700FBB914 /* ImageCollectionView.swift */,
+			);
+			path = CustomCollectionView;
+			sourceTree = "<group>";
+		};
+		CD34A74F291BD67D001704CF /* ExpandableTableView */ = {
+			isa = PBXGroup;
+			children = (
+				CD34A750291BD6E3001704CF /* ExpandableTableVC.swift */,
+			);
+			path = ExpandableTableView;
+			sourceTree = "<group>";
+		};
+		CD40722D2913904C004F68A8 /* CollectionViewForHistory */ = {
+			isa = PBXGroup;
+			children = (
+				CD2D676A29129F5F00DF42D9 /* CollectionViewCell.swift */,
+				CD2D676B29129F5F00DF42D9 /* CollectionViewCell.xib */,
+				CD407230291394C7004F68A8 /* StructCollection.swift */,
+				CD4BA771291917C200ED0E05 /* dashBoardShortViewCell.swift */,
+				CD4BA77529193D5400ED0E05 /* CustomCollectionFlowLayout.swift */,
+			);
+			path = CollectionViewForHistory;
+			sourceTree = "<group>";
+		};
+		CD41B287290F9CE7004ACDD8 /* TabbarMainHome */ = {
+			isa = PBXGroup;
+			children = (
+				CD41B288290F9D4B004ACDD8 /* TabBarMainHome.swift */,
+			);
+			path = TabbarMainHome;
 			sourceTree = "<group>";
 		};
 		CD7E4849290D2BBF00C7CE1B /* TabbarViaCode */ = {
@@ -757,6 +822,7 @@
 			files = (
 				B2CB774D276085D600870417 /* BuisinessModule.storyboard in Resources */,
 				B29D506F25EA763B002CC586 /* LaunchScreen.storyboard in Resources */,
+				CD2D676D29129F5F00DF42D9 /* CollectionViewCell.xib in Resources */,
 				B29D506C25EA763B002CC586 /* Assets.xcassets in Resources */,
 				B29D506A25EA7639002CC586 /* Main.storyboard in Resources */,
 				B2C3CB90278160DE00E1D518 /* AppBarView.xib in Resources */,
@@ -825,6 +891,7 @@
 				B2A74BEA269B53A300C0EE97 /* EventHub.swift in Sources */,
 				B2A74C02269B553C00C0EE97 /* UIBlurEffect+Style.swift in Sources */,
 				B2C342352768A3590069D0A2 /* ScrollViewDemoVC2.swift in Sources */,
+				CD4BA77629193D5400ED0E05 /* CustomCollectionFlowLayout.swift in Sources */,
 				B2A74BE3269B53A300C0EE97 /* Once.swift in Sources */,
 				B2A74BFC269B53A300C0EE97 /* PermissionView.swift in Sources */,
 				B2A74BF0269B53A300C0EE97 /* UIView+Extensions.swift in Sources */,
@@ -832,6 +899,7 @@
 				B2A79F212771F48200A87370 /* ScrollWithTableVC.swift in Sources */,
 				B2946EE9268641A900F6655E /* Connectivity.swift in Sources */,
 				CDA2AC67290944BE00F5917C /* ViewB.swift in Sources */,
+				CD40722F29139180004F68A8 /* UPCarouselFlowLayout.swift in Sources */,
 				B2B67BA92687640400999FAD /* Extension+UIApplication.swift in Sources */,
 				B2A74BFF269B53A300C0EE97 /* PagesController.swift in Sources */,
 				B2A4394227676B3000D9374A /* Extension+ScrollView.swift in Sources */,
@@ -842,6 +910,7 @@
 				B2A74BFD269B53A300C0EE97 /* PermissionController.swift in Sources */,
 				B2A74BEF269B53A300C0EE97 /* UIViewController+Extensions.swift in Sources */,
 				B2CB774F2760927400870417 /* TableViewDemoVC.swift in Sources */,
+				CD2D676C29129F5F00DF42D9 /* CollectionViewCell.swift in Sources */,
 				B2A79F1B2771B44E00A87370 /* BaicTableDemoVC.swift in Sources */,
 				B2A74BF3269B53A300C0EE97 /* UIScrollView+Extensions.swift in Sources */,
 				B2C89A8C27651DC500F0B04E /* HomeVC.swift in Sources */,
@@ -853,19 +922,23 @@
 				B2D2DFD7260F329B0046A01E /* CAPSPageMenu.swift in Sources */,
 				B28BDBB32701BB6D00C5DE95 /* Extension+Notification.swift in Sources */,
 				B2AE2AEF25FB9176000E7710 /* LoginModel.swift in Sources */,
+				CD34A751291BD6E3001704CF /* ExpandableTableVC.swift in Sources */,
 				B2A74BED269B53A300C0EE97 /* Array+Extensions.swift in Sources */,
+				CD4BA773291917C200ED0E05 /* dashBoardShortViewCell.swift in Sources */,
 				B22C10AC269051B100DCFD4C /* HistoryVC.swift in Sources */,
 				B2C89A9027651EBD00F0B04E /* DynamicLabelVC.swift in Sources */,
+				CD54F187291240E900DEA682 /* Extension+UIView.swift in Sources */,
 				B2A74BFA269B53A300C0EE97 /* Utils.swift in Sources */,
 				B2A74BF2269B53A300C0EE97 /* AVAsset+Extensions.swift in Sources */,
 				B2A74BF1269B53A300C0EE97 /* String+Extensions.swift in Sources */,
 				B2FA8A0C26918ECD00A02640 /* CustomVC.swift in Sources */,
 				B2C89A8E27651E8A00F0B04E /* ScrollDemoVC.swift in Sources */,
+				CD407231291394C7004F68A8 /* StructCollection.swift in Sources */,
 				B202A8B8260B2D3900962931 /* MenuDb.swift in Sources */,
 				B2915B462699904400DECE41 /* Reachability.swift in Sources */,
 				B2A74BFB269B53A300C0EE97 /* Permission.swift in Sources */,
 				B2A74BF8269B53A300C0EE97 /* GridView.swift in Sources */,
-				B2BD1EA22615C1B2002F14D4 /* test.swift in Sources */,
+				B2BD1EA22615C1B2002F14D4 /* NoteAndRefrence.swift in Sources */,
 				B2A74BF9269B53A300C0EE97 /* Fetcher.swift in Sources */,
 				B2BDBBA826089ACF00B0DEA9 /* Extension+UITextField.swift in Sources */,
 				CD7E484B290D2BFE00C7CE1B /* TabBarDemoVC.swift in Sources */,
@@ -887,6 +960,9 @@
 				B2A74BEC269B53A300C0EE97 /* Config.swift in Sources */,
 				CDA2AC632909439D00F5917C /* ContentView.swift in Sources */,
 				CDA2AC6029093DEF00F5917C /* SwiftUIView.swift in Sources */,
+				CD285485291A1C8700FBB914 /* ImageCollectionView.swift in Sources */,
+				CD41B289290F9D4B004ACDD8 /* TabBarMainHome.swift in Sources */,
+				CD54F1852912387C00DEA682 /* Extension+UIViewWithIBDesign.swift in Sources */,
 				B2FA8A112691A20900A02640 /* TestVew.swift in Sources */,
 				B202A8BA260B3DE200962931 /* SideMenuTableViewCell.swift in Sources */,
 				B2B7FED025FF76D4001B6514 /* LoginResponse.swift in Sources */,

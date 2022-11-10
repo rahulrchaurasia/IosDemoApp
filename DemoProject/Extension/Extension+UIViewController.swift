@@ -17,6 +17,17 @@ import TTGSnackbar
 extension UIViewController {
     
 
+    /*
+      basic Push Dem
+     
+     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+           let secondViewController = storyboard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+       
+           self.navigationController?.pushViewController(secondViewController, animated: true)
+     */
+    
+    
+    
     //-------< For Hide Keyboard >--------
     // Mark : Put this piece of code anywhere you like
     func hideKeyboardWhenTappedAround() {
@@ -41,7 +52,8 @@ extension UIViewController {
         
         let storyboard = UIStoryboard(name: name, bundle: nil)
         
-        let controller = storyboard.instantiateViewController(identifier: "\(Self.self)") as!  T
+      //  let controller = storyboard.instantiateViewController(identifier: "\(Self.self)") as!  T
+        let controller = storyboard.instantiateViewController(withIdentifier: "\(Self.self)") as!  T
         
         return controller
     }

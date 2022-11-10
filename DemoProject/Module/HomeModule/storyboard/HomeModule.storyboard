@@ -1580,6 +1580,57 @@ once your transaction is approved.</string>
             </objects>
             <point key="canvasLocation" x="2628.985507246377" y="-99.456521739130437"/>
         </scene>
+        <!--Expandable TableVC-->
+        <scene sceneID="NA3-04-lTc">
+            <objects>
+                <viewController storyboardIdentifier="ExpandableTableVC" id="d9w-6a-mGZ" customClass="ExpandableTableVC" customModule="Food_Corner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XcG-4Q-yKR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YLu-hw-7Vl">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="SJ9-Gt-9ey" style="IBUITableViewCellStyleDefault" id="Jpn-4s-dc5">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="414" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Jpn-4s-dc5" id="Gr7-77-b8E">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="SJ9-Gt-9ey">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="d9w-6a-mGZ" id="xGY-3T-QKM"/>
+                                    <outlet property="delegate" destination="d9w-6a-mGZ" id="Nc6-nd-n0d"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KzR-rv-RjG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YLu-hw-7Vl" firstAttribute="leading" secondItem="KzR-rv-RjG" secondAttribute="leading" id="Kkq-CZ-EmX"/>
+                            <constraint firstItem="KzR-rv-RjG" firstAttribute="bottom" secondItem="YLu-hw-7Vl" secondAttribute="bottom" id="fAc-RR-YOh"/>
+                            <constraint firstItem="YLu-hw-7Vl" firstAttribute="trailing" secondItem="KzR-rv-RjG" secondAttribute="trailing" id="nmH-cE-Ghq"/>
+                            <constraint firstItem="YLu-hw-7Vl" firstAttribute="top" secondItem="KzR-rv-RjG" secondAttribute="top" id="uBo-eX-gml"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ISc-mW-MCS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="niO-Dv-eqv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3575.36231884058" y="-209.5108695652174"/>
+        </scene>
         <!--Common WebVC-->
         <scene sceneID="ZWR-e3-xH8">
             <objects>
@@ -1715,7 +1766,7 @@ once your transaction is approved.</string>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daa-3t-9e8">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Kun-LV-cPP"/>
+                                    <constraint firstAttribute="height" constant="50" id="hP4-Pp-eq9"/>
                                 </constraints>
                                 <items>
                                     <navigationItem title="BottomUISheet Presentation" largeTitleDisplayMode="always" id="XZv-QR-N4y">
@@ -1733,12 +1784,10 @@ once your transaction is approved.</string>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cq-rP-875">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cq-rP-875">
                                 <rect key="frame" x="112.66666666666667" y="284.66666666666669" width="188.66666666666663" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.35405003909999999" green="0.92266027709999998" blue="0.89038635359999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="2x8-gA-bPw"/>
-                                </constraints>
                                 <color key="tintColor" red="0.28432637300000002" green="0.74095924609999997" blue="0.71504108040000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <inset key="contentEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="8" maxY="0.0"/>
@@ -1748,58 +1797,55 @@ once your transaction is approved.</string>
                                     <action selector="btnShowTabBarUIView:" destination="Z3n-Ng-8cl" eventType="touchUpInside" id="QV4-tW-Y01"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-7o-QKc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0P-7o-QKc">
                                 <rect key="frame" x="130" y="352.66666666666669" width="154" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="0dZ-Md-dfp"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Storyboard refernce"/>
                                 <connections>
                                     <segue destination="SmS-7Q-4Pl" kind="show" id="rUP-YX-Z88"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-iz-C1F">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WGK-iz-C1F">
                                 <rect key="frame" x="130" y="421" width="154" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="TabBar Using Code"/>
                                 <connections>
-                                    <segue destination="5Cc-xb-4gJ" kind="show" id="14r-45-3it"/>
+                                    <action selector="btnShowTabBar:" destination="Z3n-Ng-8cl" eventType="touchUpInside" id="b0B-J2-79w"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" // Note : First take Navigation Bar and For left and right icon add &quot;Bar Button Item From UI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-RS-B6u">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" // Note : First take Navigation Bar and For left and right icon add &quot;Bar Button Item From UI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcG-RS-B6u">
                                 <rect key="frame" x="8" y="675.33333333333337" width="398" height="40.666666666666629"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="pM4-x7-Voq"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFe-kr-hBk">
+                                <rect key="frame" x="107" y="70" width="200" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="baT-pT-aQv"/>
+                                    <constraint firstAttribute="height" constant="31" id="r7x-UT-SbG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <segue destination="d9w-6a-mGZ" kind="show" id="LTo-dF-L0Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sZb-mE-88O"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerY" secondItem="T8j-SV-9fe" secondAttribute="centerY" id="1IQ-KJ-EQB"/>
-                            <constraint firstItem="sZb-mE-88O" firstAttribute="trailing" secondItem="F0P-7o-QKc" secondAttribute="trailing" constant="130" id="4kG-IB-HgJ"/>
-                            <constraint firstItem="sZb-mE-88O" firstAttribute="bottom" secondItem="KcG-RS-B6u" secondAttribute="bottom" constant="20" id="53G-R0-dNj"/>
-                            <constraint firstItem="F0P-7o-QKc" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" constant="130" id="6Di-pG-dqY"/>
-                            <constraint firstItem="8Cq-rP-875" firstAttribute="centerX" secondItem="F0P-7o-QKc" secondAttribute="centerX" id="9wk-5E-vgD"/>
-                            <constraint firstItem="KcG-RS-B6u" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" constant="8" id="FWN-h4-BHR"/>
-                            <constraint firstItem="WGK-iz-C1F" firstAttribute="trailing" secondItem="F0P-7o-QKc" secondAttribute="trailing" id="I0r-Ca-8fi"/>
-                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerY" secondItem="T8j-SV-9fe" secondAttribute="centerY" id="NJZ-Zz-aH7"/>
-                            <constraint firstItem="daa-3t-9e8" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" id="VWC-Jt-2FE"/>
-                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerX" secondItem="T8j-SV-9fe" secondAttribute="centerX" id="aPV-z5-5Ad"/>
-                            <constraint firstItem="WGK-iz-C1F" firstAttribute="leading" secondItem="F0P-7o-QKc" secondAttribute="leading" id="eC8-6z-nuk"/>
-                            <constraint firstAttribute="trailing" secondItem="KcG-RS-B6u" secondAttribute="trailing" constant="8" id="egv-3g-ShV"/>
-                            <constraint firstItem="F0P-7o-QKc" firstAttribute="centerX" secondItem="T8j-SV-9fe" secondAttribute="centerX" id="gYH-hA-7gf"/>
-                            <constraint firstItem="daa-3t-9e8" firstAttribute="trailing" secondItem="sZb-mE-88O" secondAttribute="trailing" id="jCX-KX-TUn"/>
-                            <constraint firstItem="8Cq-rP-875" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" constant="112.66666666666669" id="jNX-VS-c1o"/>
-                            <constraint firstItem="WGK-iz-C1F" firstAttribute="top" secondItem="F0P-7o-QKc" secondAttribute="bottom" constant="37.333333333333314" id="mGG-TP-8dP"/>
-                            <constraint firstItem="F0P-7o-QKc" firstAttribute="top" secondItem="8Cq-rP-875" secondAttribute="bottom" constant="20" id="ooc-aH-Qjm"/>
-                            <constraint firstItem="daa-3t-9e8" firstAttribute="top" secondItem="sZb-mE-88O" secondAttribute="top" id="rnk-jO-7Ps"/>
+                            <constraint firstItem="lFe-kr-hBk" firstAttribute="top" secondItem="daa-3t-9e8" secondAttribute="bottom" constant="20" id="4lH-nU-cn7"/>
+                            <constraint firstItem="daa-3t-9e8" firstAttribute="top" secondItem="sZb-mE-88O" secondAttribute="top" id="6DX-vr-okB"/>
+                            <constraint firstItem="daa-3t-9e8" firstAttribute="leading" secondItem="sZb-mE-88O" secondAttribute="leading" id="Ldd-o1-295"/>
+                            <constraint firstItem="daa-3t-9e8" firstAttribute="trailing" secondItem="sZb-mE-88O" secondAttribute="trailing" id="dzw-bP-bUw"/>
+                            <constraint firstItem="lFe-kr-hBk" firstAttribute="centerX" secondItem="T8j-SV-9fe" secondAttribute="centerX" id="rrT-NS-vuv"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rMm-ji-Yk8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jz3-BY-rnH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ya-Bb-Xta">
@@ -1828,10 +1874,10 @@ once your transaction is approved.</string>
             </objects>
             <point key="canvasLocation" x="2956" y="-1000"/>
         </scene>
-        <!--View Controller-->
+        <!--Tab Bar DemoVC-->
         <scene sceneID="2Vm-L7-EcN">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="5Cc-xb-4gJ" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TabBarDemoVC" modalPresentationStyle="fullScreen" id="5Cc-xb-4gJ" customClass="TabBarDemoVC" customModule="Food_Corner" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZQY-gw-bSP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1842,9 +1888,12 @@ once your transaction is approved.</string>
                                     <constraint firstAttribute="height" constant="44" id="ibd-45-uCU"/>
                                 </constraints>
                                 <items>
-                                    <navigationItem title=" " id="mP1-fc-0at">
+                                    <navigationItem title="Tab Bar Demo" id="mP1-fc-0at">
                                         <barButtonItem key="leftBarButtonItem" title="Item" image="arrow.backward" catalog="system" id="jeO-oc-NJh">
                                             <color key="tintColor" red="0.21832686539999999" green="0.56896343429999996" blue="0.54906154539999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="btnBack:" destination="5Cc-xb-4gJ" id="hKj-V5-sfC"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>

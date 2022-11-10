@@ -27,8 +27,8 @@ import TTGSnackbar
  2> For Navigation :  open HomeVC click on Nvigation Item ,set Back button : space (ie empty space)
  
  
- 
- 
+ // Custom View Created Bt class SCView for Corner and Shadow
+ customView: SCView!
  */
 
 
@@ -49,9 +49,18 @@ class HomeVC: UIViewController {
     
     private let sideMenu = SideMenuNavigationController(rootViewController: UIViewController())
     
-     
+    
+    
+    @IBOutlet weak var cv1: UIView!
+    @IBOutlet weak var cv2: UIView!
+    @IBOutlet weak var cv3: UIView!
+    
+    // Custom View Created Bt class SCView for Corner and Shadow
+    @IBOutlet weak var customView: SCView!  // Created By Class
     @IBOutlet weak var lblData: UILabel!
     
+   
+     
     //declare this property where it won't go out of scope relative to your listener
    
     
@@ -135,6 +144,16 @@ class HomeVC: UIViewController {
         
         NotificationCenter.default.addObserver(self, selector: #selector(NotifyData1(notification:)),
                name: .NotifyData1, object: nil)
+        
+        // cv is set using IBInspection
+        
+        cv2.shadow(radius: 5, color: .black, offset: CGSize(width: 15, height: 15), opacity: 0.5)
+        
+        cv3.corners(_radius: 15)
+        
+        customView.shadowCorner(radius: 15, color: .black, offset: CGSize(width: 15, height: 15), opacity: 0.5, cornerRadius: 15)
+        
+        
       
         
     }
@@ -175,12 +194,12 @@ class HomeVC: UIViewController {
     @objc func slideToNext (){
         
         isSlidding = true
-        // self.bannerSliderCollView.isPagingEnabled = false
+       
         if(currentCellIndex < arrBannerSlider.count ){
             
             let index = IndexPath.init(item: currentCellIndex, section: 0)
             
-            self.bannerSliderCollView.isPagingEnabled = true
+            self.bannerSliderCollView.isPagingEnabled = false
             bannerPageControl.numberOfPages = arrBannerSlider.count
             bannerPageControl.currentPage = currentCellIndex
             
@@ -193,7 +212,7 @@ class HomeVC: UIViewController {
             
             let index = IndexPath.init(item: currentCellIndex, section: 0)
             
-            self.bannerSliderCollView.isPagingEnabled = true
+            self.bannerSliderCollView.isPagingEnabled = false
             bannerPageControl.numberOfPages = arrBannerSlider.count
             bannerPageControl.currentPage = currentCellIndex
             
@@ -202,7 +221,7 @@ class HomeVC: UIViewController {
             self.bannerSliderCollView.setNeedsLayout()
         }
         
-
+        self.bannerSliderCollView.isPagingEnabled = true
         
         //
         
