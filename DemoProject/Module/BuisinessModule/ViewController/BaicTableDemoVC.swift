@@ -45,7 +45,8 @@ class BaicTableDemoVC: UIViewController , UITableViewDataSource , UITableViewDel
         basicTableView.delegate = self
         basicTableView.dataSource = self
         
-        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        // AppBar Using Code
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
         appBar.lblTitle.text =  "Basic Table Demo"
         
         let gesture = UITapGestureRecognizer(target: self, action:  #selector(self.clickAction(sender:)))

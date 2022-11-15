@@ -121,12 +121,19 @@
 
 */
 
-    //***** Get Cell Of CollectionViewCell Uing CollectionView and index position ********/
+    //***** Get Cell Of CollectionViewCell Using CollectionView and index position ********/
     /*
         let pcell : CollectionViewCell = self.maincollectionView!.cellForItem(at: index) as! CollectionViewCell
         pcell.setBackground()
      */
 
+
+    //***** Get Cell Of CollectionViewCell Using CollectionView and index position ********/
+    /*
+        let pcell =  self.expandableTV.cellForRow(at: indexPath)
+        pcell.setBackground()
+     */
+       
 //*****Reload / Insert / Delete row action in tableView [Swift 5]  //*****
 //https://medium.com/bandyliuk-code/reload-insert-delete-row-action-in-tableview-swift-5-dd8e978218b7
 /*
@@ -144,6 +151,58 @@
  
  */
 
+
+
+
+
+//*****************************************************************
+//      swift uitableview space between cells
+//****************************************************************
+
+/*  Inside UITableViewCell subclass
+ override func layoutSubviews() {
+     super.layoutSubviews()
+
+     contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
+ }
+ */
+//*****************************************************************
+//      swift TABLEVIew Height equal to Actual Content Size
+//****************************************************************
+//https://www.youtube.com/watch?v=Kqf5Hkpt1ks
+/*
+ChildCellHeight.constant = ChildTableView.contentSize.height
+*/
+
+//*****************Remove Default Section Padding******/
+ //tablebiew.sectionHeaderTopPadding  = 0
+
+
+//******* When to use numberOfSections or numberOfRowsInSection *****/
+//https://stackoverflow.com/questions/43339931/when-to-use-numberofsections-or-numberofrowsinsection-swift-3
+/*
+Note: func numberOfSections(in tableView: UITableView) -> Int // Default is 1 if not implemented
+ numberOfSections is not required when you want "only the same type of repeated list" in your TableView
+ ex  suppose you want to show below in your tableview
+    1
+    2
+    3
+    4
+ in that case you will be required numberOfRowsInSection return 4 here your table will return 4 cells, if you not give numberOfSections this method it will be 1 by default
+ 
+ ex 2 > But Suppose you need to show in your tableview that 1 2 3 4 A B C D It can be achieved by
+ Number
+ 1
+ 2
+ 3
+ 4
+ Alphabet
+ A
+ B
+ C
+ D
+ Here You have to use numberOfSections and it should return 2, one for Number and second for Alphabet. and 1,2,3,4 and A,B,C,D are the rows under their section Number and Alphabet. 
+ */
 //************************************************************************
 
    //https://www.youtube.com/watch?v=ClrSpJ3txAs&t=155s

@@ -43,6 +43,8 @@ class SlideMenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
         let activationCode =  loginEntity?.activation_code ?? "8"
         lblVersion.text = UIApplication.appVersion! +  activationCode
         
+        slideTableView.sectionHeaderTopPadding  = 5
+        
     }
     func numberOfSections(in tableView: UITableView) -> Int
     {
@@ -123,7 +125,15 @@ class SlideMenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
               
             navigationController?.pushViewController(BottomSheetVC.shareInstance(), animated: true)
             
+        case 6 :
+             
+            navigationController?.pushViewController(ExpandableTableVC.shareInstance(), animated: true)
             
+        case 7 :
+             
+            navigationController?.pushViewController(NestedTableViewVC.shareInstance(), animated: true)
+          
+       
             
         case 101 :
             
