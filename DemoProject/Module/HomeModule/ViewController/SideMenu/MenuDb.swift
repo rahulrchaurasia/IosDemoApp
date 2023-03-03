@@ -39,6 +39,7 @@ class MenuDb {
         Menulist.append(MenuModel(name: "Bottom Sheet Presentation",img: "home1" ,modelId: 5))
         Menulist.append(MenuModel(name: "Expandable TableView",img: "home1" ,modelId: 6))
         Menulist.append(MenuModel(name: "Nested TableView Demo",img: "home1" ,modelId: 7))
+        Menulist.append(MenuModel(name: "Get Contact Demo",img: "home1" ,modelId: 8))
         return Menulist
     }
     

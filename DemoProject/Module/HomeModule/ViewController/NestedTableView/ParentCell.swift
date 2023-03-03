@@ -15,7 +15,7 @@ class ParentCell: UITableViewCell {
     @IBOutlet weak var ParentView: UIView!
     
     
-    @IBOutlet weak var ChildCellHeight: NSLayoutConstraint!
+   // @IBOutlet weak var ChildCellHeight: NSLayoutConstraint!
     @IBOutlet weak var ChildTableView: UITableView!
     
    
@@ -30,8 +30,8 @@ class ParentCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        ChildTableView.delegate = self
-        ChildTableView.dataSource = self
+//        ChildTableView.delegate = self
+//        ChildTableView.dataSource = self
         
         self.ParentView.layer.cornerRadius = 22.0
         self.ParentView.layer.borderWidth = 1.0
@@ -41,7 +41,7 @@ class ParentCell: UITableViewCell {
 //        self.ChildTableView.estimatedRowHeight = 370
         
       
-        
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 12, left: 10, bottom: 0, right: 8))
         btnTapParent.addTarget(self, action: #selector(self.clickAction), for: .touchUpInside)
         
     }
@@ -49,7 +49,7 @@ class ParentCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
 
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 8, left: 8, bottom: 8, right: 8))
+      
         self.ParentView.layer.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 0.2980908526)
         
        // ChildCellHeight.constant = ChildTableView.contentSize.height
@@ -71,6 +71,8 @@ class ParentCell: UITableViewCell {
     }
    
 }
+
+
 extension ParentCell: UITableViewDelegate,UITableViewDataSource {
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -85,9 +87,7 @@ extension ParentCell: UITableViewDelegate,UITableViewDataSource {
 //
 //            return 0
 //        }
-     return menuData[ChildTableView.tag].sectionData.count
-        
-        
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -98,7 +98,7 @@ extension ParentCell: UITableViewDelegate,UITableViewDataSource {
         menuData[ChildTableView.tag].sectionData[indexPath.row].subtitle
         
        
-        ChildCellHeight.constant = ChildTableView.contentSize.height
+//        ChildCellHeight.constant = ChildTableView.contentSize.height
 
         
       
@@ -110,3 +110,5 @@ extension ParentCell: UITableViewDelegate,UITableViewDataSource {
     
     
 }
+ 
+

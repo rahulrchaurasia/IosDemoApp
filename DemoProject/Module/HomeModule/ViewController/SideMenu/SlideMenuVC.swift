@@ -133,7 +133,10 @@ class SlideMenuVC: UIViewController, UITableViewDelegate,UITableViewDataSource {
              
             navigationController?.pushViewController(NestedTableViewVC.shareInstance(), animated: true)
           
-       
+        case 8 :
+             
+            navigationController?.pushViewController(ContactDetailsVC.shareInstance(), animated: true)
+          
             
         case 101 :
             

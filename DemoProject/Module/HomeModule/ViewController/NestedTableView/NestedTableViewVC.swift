@@ -84,9 +84,9 @@ extension NestedTableViewVC: UITableViewDelegate,UITableViewDataSource {
     }
     
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-            cell.layoutIfNeeded()
-        }
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//            cell.layoutIfNeeded()
+//        }
 
     
 
