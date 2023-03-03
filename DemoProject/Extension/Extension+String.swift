@@ -20,4 +20,5 @@ extension String {
         return self.components(separatedBy: CharacterSet.alphanumerics.inverted).filter({ !$0.isEmpty }).joined()
     }
     
+    var digitOnly: String { filter { ("0"..."9").contains($0) } }
 }

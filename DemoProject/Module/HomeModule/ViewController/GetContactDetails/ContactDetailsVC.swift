@@ -120,22 +120,30 @@ class ContactDetailsVC: UIViewController {
                
 
                 
-                var a  = contact.phoneNumbers.filter{ $0.value.stringValue.count > 10
-        
-                }
+                var tempPhoneData  =  contact.phoneNumbers.filter{ $0.value.stringValue.count >= 10
                 
+                }.compactMap { $0.value.stringValue.digitOnly}
+                   
                 
-                let b :[String] = contact.phoneNumbers.filter{ $0.value.stringValue.count > 10
+                var PhoneDataArray = [String]()
+                tempPhoneData.forEach { element in
+                   
+                    if(element.count >= 10){
+                        
+                        var c =   element.suffix(10)
+                          
+                        PhoneDataArray.append(String(c))
+                          
+                          
+                    }
+                  
                     
-                }.compactMap { $0.value.stringValue.removeSpecialCharactersWithoutSpace}
+                }
 
-              
-                print("Filter Data :", b.first?.suffix(5))
+                print("Filter Data :", PhoneDataArray)
                 
-                
-                
-               
-               
+
+
                 self.contactData.append(
                     ContactModel(
                         Name :"\(contact.givenName) \(contact.familyName)",
@@ -143,10 +151,9 @@ class ContactDetailsVC: UIViewController {
                         
 //                        PhoneNumbers: contact.phoneNumbers.compactMap { $0.value.stringValue.removeSpecialCharactersWithoutSpace},
 
+                        PhoneNumbers: PhoneDataArray,
                         
-                        PhoneNumbers: contact.phoneNumbers.filter{ $0.value.stringValue.count > 10 }.compactMap { $0.value.stringValue.removeSpecialCharactersWithoutSpace},
-
-                
+        
                         
                         EmailAddresses: contact.emailAddresses.compactMap{$0.value as String },
                         OrganizationName:  contact.organizationName,
@@ -165,23 +172,21 @@ class ContactDetailsVC: UIViewController {
                         
                     ))
                 
-              
-                //*/
                                 
 
             })
            
             
 
-//            let encodedData = try JSONEncoder().encode(contactData)
-//            let jsonString = String(data: encodedData,
-//                                    encoding: .utf8)
-//
-//            if let data = jsonString {
-//
-//               var listdata =  data.replacingOccurrences(of: "\\", with: "")
-//                print(listdata)
-//            }
+            let encodedData = try JSONEncoder().encode(contactData)
+            let jsonString = String(data: encodedData,
+                                    encoding: .utf8)
+
+            if let data = jsonString {
+
+               var listdata =  data.replacingOccurrences(of: "\\", with: "")
+                print(listdata)
+            }
             
             
              //print(self.contactData)
