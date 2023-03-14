@@ -10,6 +10,14 @@ import UIKit
 import Contacts
 
 
+struct ContactMainModel :Identifiable, Encodable  {
+    
+    var id = UUID().uuidString
+    var name : String
+    var mobileno : String
+}
+
+
 struct ContactModel :Identifiable, Encodable {
     var id = UUID().uuidString
     
@@ -19,10 +27,6 @@ struct ContactModel :Identifiable, Encodable {
     
     var OrganizationName: String
     
-//    var StreetAddresses: [String]
-//    var CityAddresses: [String]
-//    var PostalAddresses: [String]
-    
     var PostalAddress: [String]
     
     var Nickname: String
@@ -31,6 +35,7 @@ struct ContactModel :Identifiable, Encodable {
     
 
 }
+
 
 struct AddressModel : Encodable {
     
@@ -42,6 +47,7 @@ struct AddressModel : Encodable {
                             
 class ContactDetailsVC: UIViewController {
 
+    var contactMainData = [ContactMainModel]()
     var contactData = [ContactModel]()
     var addressData = [AddressModel]()
     override func viewDidLoad() {
@@ -68,6 +74,41 @@ class ContactDetailsVC: UIViewController {
                 let last = String(website.suffix(6))
                 print(last)
                 retrieveContacts(from: store)
+                
+               
+                for contact in self.contactData{
+                    
+                    var mobilenoList = contact.PhoneNumbers.map{$0}
+                    var name = contact.Name
+                    
+                    if(mobilenoList.count > 0){
+                        
+                        for mobile in mobilenoList {
+                            contactMainData.append(
+                                ContactMainModel( name: name, mobileno: mobile)
+                            )
+                        }
+                    }
+                    
+                }
+                
+                do{
+                    let encodedData = try JSONEncoder().encode(contactMainData)
+                    let jsonString = String(data: encodedData,
+                                            encoding: .utf8)
+
+                    if let data = jsonString {
+    
+                       var listdata =  data.replacingOccurrences(of: "\\", with: "")
+                        print(listdata)
+                    }
+                    
+                }catch {
+                    
+                }
+                
+                
+                
             }
     }
     
@@ -90,13 +131,13 @@ class ContactDetailsVC: UIViewController {
         print(contacts)
       }
     
-    func addAddress(a : String , b: String , c : String) -> String{
-        
-        return "\(a) \(b) \(c)"
-        
-        print("Address" + a + b + c)
+   
+    func getBirthdateFromContact(contact: CNContact) -> Date? {
+        if let birthday = contact.birthday {
+            return Calendar.current.date(from: birthday)
+        }
+        return nil
     }
-    
     func retrieveContacts(from store: CNContactStore) {
         
         let keys = [CNContactGivenNameKey,CNContactPhoneNumbersKey,CNContactFamilyNameKey,CNContactEmailAddressesKey,
@@ -119,31 +160,45 @@ class ContactDetailsVC: UIViewController {
                                             { contact, stop in
                
 
+//                let tempPhoneData  =  contact.phoneNumbers.filter{ $0.value.stringValue.count >= 10
+//
+//                }.compactMap { $0.value.stringValue.digitOnly.suffix(10)}.filter{$0.count >= 10}
+//
+//
+//                let tempPhoneData1  =  contact.phoneNumbers.compactMap { $0.value.stringValue}
                 
+                
+//
                 var tempPhoneData  =  contact.phoneNumbers.filter{ $0.value.stringValue.count >= 10
-                
+
                 }.compactMap { $0.value.stringValue.digitOnly}
-                   
+
                 
                 var PhoneDataArray = [String]()
-                tempPhoneData.forEach { element in
-                   
-                    if(element.count >= 10){
-                        
-                        var c =   element.suffix(10)
-                          
-                        PhoneDataArray.append(String(c))
-                          
-                          
-                    }
-                  
-                    
-                }
-
-                print("Filter Data :", PhoneDataArray)
                 
+            
+              
+                tempPhoneData.forEach { element in
+
+                    if(element.count >= 10){
+
+                        let c =   element.suffix(10)
+
+                        PhoneDataArray.append(String(c))
 
 
+                    }
+
+
+                }
+                
+                debugPrint("Filter Data :", PhoneDataArray)
+            
+
+//                debugPrint("Filter Data :", tempPhoneData)
+//
+//                debugPrint("Original Data :", tempPhoneData1)
+//
                 self.contactData.append(
                     ContactModel(
                         Name :"\(contact.givenName) \(contact.familyName)",
@@ -153,9 +208,8 @@ class ContactDetailsVC: UIViewController {
 
                         PhoneNumbers: PhoneDataArray,
                         
-        
-                        
                         EmailAddresses: contact.emailAddresses.compactMap{$0.value as String },
+                        
                         OrganizationName:  contact.organizationName,
                        
                        
@@ -172,9 +226,11 @@ class ContactDetailsVC: UIViewController {
                         
                     ))
                 
-                                
-
+               
+               
             })
+           
+            
            
             
 
@@ -189,9 +245,12 @@ class ContactDetailsVC: UIViewController {
             }
             
             
+            
+            
+            
              //print(self.contactData)
         }catch let err {
-            print("print to fetch Contact" ,  err)
+            debugPrint("print to fetch Contact" ,  err)
         }
         
         
