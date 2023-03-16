@@ -10,9 +10,12 @@
 //https://www.youtube.com/watch?v=ZsNaLabb0YM
 
 /******************For Scrollview : *********************************************************
+ https://www.youtube.com/watch?v=orONrVT6CAg
 
   https://www.youtube.com/watch?v=_Qn3UGad3lg&t=41s
 *********************************************************************************************/
+// For Static Scrollview container width only equal to mainView/scrollview and set height manually eg :H: 1100. so we have to set mainView h : also 1100 so it show on screen properly
+
 
 //Note  Scrollview : Remove for Content Layout Guide : "uncheck the Content Layout Guides" in right Tools second last option
      //*******************  {A} Scroollview / Clip to bound  ***************************//

@@ -108,7 +108,6 @@ class ContactDetailsVC: UIViewController {
                 }
                 
                 
-                
             }
     }
     
