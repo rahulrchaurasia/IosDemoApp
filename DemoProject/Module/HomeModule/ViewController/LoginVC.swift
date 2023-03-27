@@ -19,6 +19,8 @@ import SVProgressHUD
  For hiding the title bar :
  navigationController?.setNavigationBarHidden(true, animated: false) 
  
+ Completion Handler :-
+ Link : https://www.youtube.com/watch?v=1K7Ip2f0lKg
  */
 
 class LoginVC: UIViewController, UITextFieldDelegate {
