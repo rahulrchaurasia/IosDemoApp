@@ -43,6 +43,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     override func viewWillDisappear(_ animated: Bool) {
+        
+        // For hiding the title bar :
         navigationController?.setNavigationBarHidden(true, animated: true)
         // For Showing title in Another ViewController
     }

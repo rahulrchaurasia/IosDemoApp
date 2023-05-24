@@ -50,7 +50,7 @@ class MenuDb {
         Menulist.append(MenuModel(name: "TableView Basic" ,img: "ic_business_name" ,modelId: 101))
         Menulist.append(MenuModel(name: "TableView Demo",img: "ic_business_name" ,modelId: 102))
         Menulist.append(MenuModel(name: "Buissness Data2",img: "ic_business_name" ,modelId: 103))
-        Menulist.append(MenuModel(name: "TBuissness Data3",img: "ic_business_name" ,modelId: 104))
+        Menulist.append(MenuModel(name: "TBuissness Login Demo",img: "ic_business_name" ,modelId: 104))
         Menulist.append(MenuModel(name: "Buissness Data4",img: "ic_business_name" ,modelId: 105))
         Menulist.append(MenuModel(name: "Buissness Data5",img: "ic_business_name" ,modelId: 106))
         Menulist.append(MenuModel(name: "Buissness Data6",img: "ic_business_name" ,modelId: 107))

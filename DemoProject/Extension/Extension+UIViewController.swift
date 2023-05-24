@@ -90,7 +90,30 @@ extension UIViewController {
           })
           
       }
+    /********************* Alert Call backAction  ******************************/
+    // Alert with Action call back
+  
+    func showAlert(title: String, message: String, handlerOK:((UIAlertAction) -> Void)?, handlerCancle: ((UIAlertAction) -> Void)?) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .destructive, handler: handlerOK)
+        let actionCanel = UIAlertAction(title: "Cancle", style: .cancel, handler: handlerCancle)
+        alert.addAction(action)
+        alert.addAction(actionCanel)
+        DispatchQueue.main.async {
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
     
+    // Demo For Call Alert action in ViewControll
+//    @IBAction func onClickOK(_ sender: Any) {
+//        showAlert(title: "Alert!", message: "Are you sure you want to logout?", handlerOK: { action in
+//            print("Action Called")
+//        }, handlerCancle: {actionCanel in
+//            print("Action cancel called")
+//        })
+//    }
+    
+    /***************************************************/
     func snackBar(message : String){
         
         let snackbar = TTGSnackbar(

@@ -16,6 +16,19 @@ import UIKit
 
 extension UIView {
     
+   /*****************************************************/
+    //Mark : TextField with Bottom border Color
+    func addBootomBorderLineWithColor(color: UIColor, width: CGFloat) {
+            let bottomLine = CALayer()
+            bottomLine.backgroundColor = color.cgColor
+        bottomLine.frame = CGRect(x: 0, y: self.frame.height - width,
+                                  width: self.frame.width,
+                                  height: width)
+            layer.addSublayer(bottomLine)
+        }
+    
+    /*****************************************************/
+    
     @discardableResult
     func corners(_radius: CGFloat) -> UIView{
         
