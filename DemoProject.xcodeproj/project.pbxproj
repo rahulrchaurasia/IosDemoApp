@@ -138,6 +138,8 @@
 		CDDB86752A1DE89100D1C002 /* IQUIView+Hierarchy.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB865E2A1DE89100D1C002 /* IQUIView+Hierarchy.swift */; };
 		CDDB86762A1DE89100D1C002 /* IQNSArray+Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB865F2A1DE89100D1C002 /* IQNSArray+Sort.swift */; };
 		CDDB86772A1DE89100D1C002 /* IQKeyboardManager+UITextFieldViewNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB86602A1DE89100D1C002 /* IQKeyboardManager+UITextFieldViewNotification.swift */; };
+		CDDB867A2A1DF0BD00D1C002 /* DismissKeyboardOnTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB86792A1DF0BD00D1C002 /* DismissKeyboardOnTap.swift */; };
+		CDDB867D2A1DF18900D1C002 /* Extension+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDB867C2A1DF18900D1C002 /* Extension+View.swift */; };
 		CDDF4F972A1B975400D6438A /* DemoLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDF4F962A1B975400D6438A /* DemoLoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -278,6 +280,8 @@
 		CDDB865E2A1DE89100D1C002 /* IQUIView+Hierarchy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQUIView+Hierarchy.swift"; sourceTree = "<group>"; };
 		CDDB865F2A1DE89100D1C002 /* IQNSArray+Sort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQNSArray+Sort.swift"; sourceTree = "<group>"; };
 		CDDB86602A1DE89100D1C002 /* IQKeyboardManager+UITextFieldViewNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IQKeyboardManager+UITextFieldViewNotification.swift"; sourceTree = "<group>"; };
+		CDDB86792A1DF0BD00D1C002 /* DismissKeyboardOnTap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissKeyboardOnTap.swift; sourceTree = "<group>"; };
+		CDDB867C2A1DF18900D1C002 /* Extension+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+View.swift"; sourceTree = "<group>"; };
 		CDDF4F962A1B975400D6438A /* DemoLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -763,6 +767,8 @@
 		CDA2AC5E29093DB200F5917C /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				CDDB867B2A1DF0F100D1C002 /* Extension */,
+				CDDB86782A1DF0A500D1C002 /* DismissKeyBoard */,
 				CDDB863D2A1DD2F900D1C002 /* Demo */,
 				CDA2AC612909430E00F5917C /* bottomTabBar */,
 				CDA2AC5F29093DEF00F5917C /* SwiftUIView.swift */,
@@ -851,6 +857,22 @@
 				CDDB865F2A1DE89100D1C002 /* IQNSArray+Sort.swift */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		CDDB86782A1DF0A500D1C002 /* DismissKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB86792A1DF0BD00D1C002 /* DismissKeyboardOnTap.swift */,
+			);
+			path = DismissKeyBoard;
+			sourceTree = "<group>";
+		};
+		CDDB867B2A1DF0F100D1C002 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CDDB867C2A1DF18900D1C002 /* Extension+View.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1048,6 +1070,7 @@
 				B22C10AC269051B100DCFD4C /* HistoryVC.swift in Sources */,
 				B2C89A9027651EBD00F0B04E /* DynamicLabelVC.swift in Sources */,
 				CD54F187291240E900DEA682 /* Extension+UIView.swift in Sources */,
+				CDDB867A2A1DF0BD00D1C002 /* DismissKeyboardOnTap.swift in Sources */,
 				B2A74BFA269B53A300C0EE97 /* Utils.swift in Sources */,
 				B2A74BF2269B53A300C0EE97 /* AVAsset+Extensions.swift in Sources */,
 				CDDB86692A1DE89100D1C002 /* IQKeyboardManager+UIKeyboardNotification.swift in Sources */,
@@ -1064,6 +1087,7 @@
 				B2A74BF9269B53A300C0EE97 /* Fetcher.swift in Sources */,
 				B2BDBBA826089ACF00B0DEA9 /* Extension+UITextField.swift in Sources */,
 				CD7E484B290D2BFE00C7CE1B /* TabBarDemoVC.swift in Sources */,
+				CDDB867D2A1DF18900D1C002 /* Extension+View.swift in Sources */,
 				B29D506325EA7639002CC586 /* AppDelegate.swift in Sources */,
 				B2A74C04269B554700C0EE97 /* UIColor.swift in Sources */,
 				B2AE2AED25FB8DE2000E7710 /* APILoginManger.swift in Sources */,
